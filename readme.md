@@ -14,7 +14,7 @@ We assume that the effect of additional 'favorite' is the largest when the repos
 Tradeoffs:
 
 1. Github metrics are slow moving so options = Not use the metrics, go big, go long.
-2. Cheap or expensive stars: cheap stars will be rescinded by integrity teams so best for measuring short term impact.
+2. Cheap or expensive stars: cheap stars will be rescinded by integrity teams so best for measuring short term impact though it would be interesting to see the long run impact
 3. New or old repos?: Quality is least certain with new so presumably a more important heuristic. 
 4. Popular or unpopular repos.: the marginal impact of XX stars is likely the greatest where the n_stars is low. 
 
