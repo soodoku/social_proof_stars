@@ -9,7 +9,7 @@ A long line of research has shown that social proof plays a large role in people
 
 ### Data 
 
-We assume that the effect of additional 'favorite' is the largest when the repository has zero favorites. More generally, we expect the effect of additional social proof to decline and assymptote close to zero as the cummulated social proof increases. 
+We assume that the effect of additional 'favorite' is the largest when the repository has zero favorites. More generally, we expect the effect of additional social proof to decline and asymptote close to zero as the cumulated social proof increases. 
 
 Tradeoffs:
 
