@@ -23,7 +23,22 @@
 * Checks for GitHub repo URL correctness and existence
 * Output: `check-github-url.csv`
 
+### `get-packages.ipynb`
 
+* Scan PyPI packages for "new" packages
+* "new" packages defined by `cutoff_date` in the notebook
+* 
 ### `pypinfo.ipynb`
 
 * Just to see if `pypinfo` can get what we need 
+
+### `startrack.ipynb`
+
+* Just to see what API endpoint for each star and its timestamp
+* Can give timeseries of stars for a repo
+
+### `manual_check.ipynb` 
+
+* Randomly sample 100 new packages (24 April to 30 April)
+* And manually check through each to see if there is a readme and if they really are new packages
+* Main output: `passed.csv`
