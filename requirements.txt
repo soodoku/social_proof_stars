@@ -1,0 +1,11 @@
+google-cloud-bigquery
+pandas==2.0.0rc0
+pyarrow
+pyjanitor
+runpynb
+forestplot
+jupyter
+notebook==6.4.12
+jupyter_contrib_nbextensions
+jupyter_nbextensions_configurator
+tqdm
