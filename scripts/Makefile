@@ -9,7 +9,9 @@ task:
 	echo "==> $@"
 	echo "==> Populating $(newtask) as a folder..."
 	mkdir $(newtask) && cd $(newtask) && mkdir input output src
-
+	# Symlink utilities.py from scripts/utilities.py
+	cd $(newtask)/src && ln --symbolic --force --verbose ../../utilities.py .
+	
 # ============================================================================
 # Lint utilities.py
 # ============================================================================
