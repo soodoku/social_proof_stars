@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import json
 from datetime import datetime, timedelta
+import gzip
 
 def save_mpl_fig(
     savepath: str, formats: Optional[Iterable[str]] = None, dpi: Optional[int] = None
@@ -349,3 +350,27 @@ def get_datestr_list(start_date: str, end_date: str) -> List[str]:
         current_date += timedelta(days=1)
 
     return dates
+
+
+def read_jsongz(filepath: str) -> Dict:
+    """
+    Read a JSON file compressed with gzip.
+
+    Parameters
+    ----------
+    cache_filepath: str
+        The path to the gzip-compressed JSON file.
+
+    Returns
+    -------
+    dict
+        The loaded metadata as a dictionary.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        json.JSONDecodeError: If the file contains invalid JSON data.
+        gzip.BadGzipFile: If the file is not a valid gzip file.
+    """
+    with gzip.open(filepath, "r") as f:
+        payload = json.loads(f.read())
+    return payload
