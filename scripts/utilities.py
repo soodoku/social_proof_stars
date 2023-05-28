@@ -12,13 +12,13 @@
 """
 from typing import Any, Iterable, Optional
 from typing import Dict
+from typing import List
 
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import json
-from pprint import pprint
-
+from datetime import datetime, timedelta
 
 def save_mpl_fig(
     savepath: str, formats: Optional[Iterable[str]] = None, dpi: Optional[int] = None
@@ -241,7 +241,7 @@ def save_json(data, savepath):
     -------
     None
     """    
-    if savepath.split(".")[-1] != ".json":
+    if savepath.split(".")[-1] != "json":
         savepath += ".json"
     with open(savepath, "w") as file:
         json.dump(data, file)
@@ -312,3 +312,40 @@ def read_jsons(directory: str, extension: str = ".json") -> list:
         if os.path.isfile(file_path) and filename.endswith(extension):
                 data_list.append(read_json(file_path))
     return data_list
+
+
+def get_datestr_list(start_date: str, end_date: str) -> List[str]:
+    """Generate a list of dates in string format between two specified dates.
+
+    Parameters
+    ----------
+    start_date : str
+        The start date in the format 'YYYY-MM-DD'.
+    end_date : str
+        The end date in the format 'YYYY-MM-DD'.
+
+    Returns
+    -------
+    List[str]
+        A list of dates in string format between the start and end dates (inclusive).
+
+    Example
+    -------
+    >>> start_date = "2022-01-01"
+    >>> end_date = "2022-01-05"
+    >>> dates = get_dates_between(start_date, end_date)
+    >>> print(dates)
+    ['2022-01-01', '2022-01-02', '2022-01-03', '2022-01-04', '2022-01-05']
+    """
+    dates = []
+    date_format = "%Y-%m-%d"
+
+    start = datetime.strptime(start_date, date_format)
+    end = datetime.strptime(end_date, date_format)
+
+    current_date = start
+    while current_date <= end:
+        dates.append(current_date.strftime(date_format))
+        current_date += timedelta(days=1)
+
+    return dates
