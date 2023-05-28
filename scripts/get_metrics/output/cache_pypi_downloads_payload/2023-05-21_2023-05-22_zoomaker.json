@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 05:11:02", "query": {"bytes_billed": 176160768, "bytes_processed": 175465907, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-21", "--end-date", "2023-05-22", "zoomaker"]}

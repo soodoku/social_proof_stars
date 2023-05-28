@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 04:34:52", "query": {"bytes_billed": 16777216, "bytes_processed": 15936224, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 3}], "args": ["pypinfo", "-j", "--start-date", "2023-04-30", "--end-date", "2023-05-01", "cosmopower-jax"]}

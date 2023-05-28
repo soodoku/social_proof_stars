@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 02:56:24", "query": {"bytes_billed": 39845888, "bytes_processed": 39656270, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-04-29", "--end-date", "2023-04-30", "micropython-icm20948"]}

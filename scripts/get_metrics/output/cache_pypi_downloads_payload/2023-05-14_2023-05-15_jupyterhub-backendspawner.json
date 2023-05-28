@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 05:18:21", "query": {"bytes_billed": 67108864, "bytes_processed": 66215591, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 17}], "args": ["pypinfo", "-j", "--start-date", "2023-05-14", "--end-date", "2023-05-15", "jupyterhub-backendspawner"]}

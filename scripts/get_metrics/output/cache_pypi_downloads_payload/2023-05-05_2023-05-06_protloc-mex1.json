@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 04:58:19", "query": {"bytes_billed": 54525952, "bytes_processed": 53777750, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-05", "--end-date", "2023-05-06", "protloc-mex1"]}
