@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 09:17:31", "query": {"bytes_billed": 67108864, "bytes_processed": 66628898, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 29}], "args": ["pypinfo", "-j", "--start-date", "2023-05-22", "--end-date", "2023-05-23", "neuralbasics"]}

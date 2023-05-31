@@ -1,0 +1,1 @@
+{"last_update": "2023-05-30 03:43:04", "query": {"bytes_billed": 65011712, "bytes_processed": 64506776, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-28", "--end-date", "2023-05-29", "scarlet-shark-python"]}

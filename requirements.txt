@@ -5,6 +5,9 @@ pyjanitor
 runpynb
 forestplot
 pypinfo
+seaborn
+matplotlib
+cmasher
 pandas
 pyjanitor
 tqdm
@@ -15,3 +18,4 @@ notebook==6.4.12
 jupyter_contrib_nbextensions
 jupyter_nbextensions_configurator
 tqdm
+pypinfo

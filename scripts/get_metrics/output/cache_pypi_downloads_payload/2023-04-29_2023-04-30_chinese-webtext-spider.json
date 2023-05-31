@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 10:14:41", "query": {"bytes_billed": 200278016, "bytes_processed": 199258038, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 6}], "args": ["pypinfo", "-j", "--start-date", "2023-04-29", "--end-date", "2023-04-30", "chinese-webtext-spider"]}

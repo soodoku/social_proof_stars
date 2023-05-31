@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 13:10:37", "query": {"bytes_billed": 53477376, "bytes_processed": 53290418, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-10", "--end-date", "2023-05-11", "redshift-user-manager"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 09:12:16", "query": {"bytes_billed": 62914560, "bytes_processed": 62903683, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 11}], "args": ["pypinfo", "-j", "--start-date", "2023-05-07", "--end-date", "2023-05-08", "sdtcloud"]}

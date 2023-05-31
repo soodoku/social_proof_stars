@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 03:49:21", "query": {"bytes_billed": 117440512, "bytes_processed": 116694607, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 13}], "args": ["pypinfo", "-j", "--start-date", "2023-04-30", "--end-date", "2023-05-01", "wikiseriesbrentlib"]}

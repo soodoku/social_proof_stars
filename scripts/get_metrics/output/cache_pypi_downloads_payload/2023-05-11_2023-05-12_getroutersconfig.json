@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 11:21:29", "query": {"bytes_billed": 33554432, "bytes_processed": 33270051, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-11", "--end-date", "2023-05-12", "getroutersconfig"]}

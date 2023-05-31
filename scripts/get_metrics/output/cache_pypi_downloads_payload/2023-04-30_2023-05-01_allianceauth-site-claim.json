@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 03:44:53", "query": {"bytes_billed": 52428800, "bytes_processed": 51388195, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 5}], "args": ["pypinfo", "-j", "--start-date", "2023-04-30", "--end-date", "2023-05-01", "allianceauth-site-claim"]}

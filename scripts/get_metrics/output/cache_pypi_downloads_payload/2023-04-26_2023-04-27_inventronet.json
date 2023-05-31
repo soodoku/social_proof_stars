@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 11:11:50", "query": {"bytes_billed": 49283072, "bytes_processed": 48351944, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 20}], "args": ["pypinfo", "-j", "--start-date", "2023-04-26", "--end-date", "2023-04-27", "inventronet"]}

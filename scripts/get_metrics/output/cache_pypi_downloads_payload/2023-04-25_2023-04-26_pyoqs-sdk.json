@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 10:12:59", "query": {"bytes_billed": 116391936, "bytes_processed": 115866942, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-04-25", "--end-date", "2023-04-26", "pyoqs-sdk"]}

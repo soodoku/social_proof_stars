@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 13:29:09", "query": {"bytes_billed": 57671680, "bytes_processed": 57497432, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 26}], "args": ["pypinfo", "-j", "--start-date", "2023-04-28", "--end-date", "2023-04-29", "complex-network-link-prediction"]}
