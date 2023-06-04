@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 05:32:51", "query": {"bytes_billed": 218103808, "bytes_processed": 218086050, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-08", "--end-date", "2023-05-09", "pycramfs"]}

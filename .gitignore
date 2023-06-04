@@ -515,3 +515,5 @@ TSWLatexianTemp*
 *.glstex
 
 # End of https://www.toptal.com/developers/gitignore/api/tex
+.Rproj.user
+.DS_Store

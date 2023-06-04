@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 10:11:34", "query": {"bytes_billed": 10485760, "bytes_processed": 9231583, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-02", "--end-date", "2023-05-03", "a-pandas-ex-df2htmlstring"]}

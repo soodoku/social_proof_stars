@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 04:42:28", "query": {"bytes_billed": 59768832, "bytes_processed": 59313319, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 18}], "args": ["pypinfo", "-j", "--start-date", "2023-05-23", "--end-date", "2023-05-24", "baichat-py"]}

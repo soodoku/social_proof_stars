@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 07:22:47", "query": {"bytes_billed": 29360128, "bytes_processed": 28327314, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-05", "--end-date", "2023-05-06", "bw-graph-tools"]}

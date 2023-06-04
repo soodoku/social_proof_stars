@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 11:15:16", "query": {"bytes_billed": 45088768, "bytes_processed": 44351284, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-05-13", "--end-date", "2023-05-14", "neural-data-simulator"]}

@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 07:32:01", "query": {"bytes_billed": 135266304, "bytes_processed": 134871736, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 7}], "args": ["pypinfo", "-j", "--start-date", "2023-05-05", "--end-date", "2023-05-06", "camerahub-tagger"]}

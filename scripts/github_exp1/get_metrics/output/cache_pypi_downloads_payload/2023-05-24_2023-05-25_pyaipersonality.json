@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 04:09:59", "query": {"bytes_billed": 59768832, "bytes_processed": 59648353, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 213}], "args": ["pypinfo", "-j", "--start-date", "2023-05-24", "--end-date", "2023-05-25", "pyaipersonality"]}

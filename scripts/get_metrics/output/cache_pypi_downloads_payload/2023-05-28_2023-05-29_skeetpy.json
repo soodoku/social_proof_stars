@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 02:53:44", "query": {"bytes_billed": 218103808, "bytes_processed": 217689046, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-28", "--end-date", "2023-05-29", "skeetpy"]}

@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 09:43:54", "query": {"bytes_billed": 102760448, "bytes_processed": 102009647, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-04-27", "--end-date", "2023-04-28", "mote-gtest-gui"]}

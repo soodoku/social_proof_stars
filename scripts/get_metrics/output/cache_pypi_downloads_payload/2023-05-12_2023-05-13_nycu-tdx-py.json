@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 11:36:09", "query": {"bytes_billed": 37748736, "bytes_processed": 36704042, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 24}], "args": ["pypinfo", "-j", "--start-date", "2023-05-12", "--end-date", "2023-05-13", "nycu-tdx-py"]}

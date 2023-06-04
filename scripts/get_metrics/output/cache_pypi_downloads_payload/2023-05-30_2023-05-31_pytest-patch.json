@@ -1,1 +1,0 @@
-{"last_update": "2023-05-31 09:47:06", "query": {"bytes_billed": 136314880, "bytes_processed": 135679621, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-30", "--end-date", "2023-05-31", "pytest-patch"]}

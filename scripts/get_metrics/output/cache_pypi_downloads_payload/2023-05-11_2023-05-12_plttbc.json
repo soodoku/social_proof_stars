@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 09:24:30", "query": {"bytes_billed": 19922944, "bytes_processed": 19513492, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 5}], "args": ["pypinfo", "-j", "--start-date", "2023-05-11", "--end-date", "2023-05-12", "plttbc"]}

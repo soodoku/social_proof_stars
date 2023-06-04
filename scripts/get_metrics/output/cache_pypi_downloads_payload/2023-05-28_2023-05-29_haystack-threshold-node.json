@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 02:53:39", "query": {"bytes_billed": 161480704, "bytes_processed": 161220345, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-28", "--end-date", "2023-05-29", "haystack-threshold-node"]}

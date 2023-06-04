@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 06:52:19", "query": {"bytes_billed": 75497472, "bytes_processed": 74481404, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-01", "--end-date", "2023-05-02", "kmdouglass-udesigner"]}

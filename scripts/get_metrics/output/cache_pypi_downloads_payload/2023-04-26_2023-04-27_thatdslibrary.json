@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 06:59:47", "query": {"bytes_billed": 33554432, "bytes_processed": 32641285, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 9}], "args": ["pypinfo", "-j", "--start-date", "2023-04-26", "--end-date", "2023-04-27", "thatdslibrary"]}

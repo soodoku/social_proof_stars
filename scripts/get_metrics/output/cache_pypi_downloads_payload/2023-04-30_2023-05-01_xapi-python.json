@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 04:53:35", "query": {"bytes_billed": 80740352, "bytes_processed": 80534207, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 10}], "args": ["pypinfo", "-j", "--start-date", "2023-04-30", "--end-date", "2023-05-01", "xapi-python"]}

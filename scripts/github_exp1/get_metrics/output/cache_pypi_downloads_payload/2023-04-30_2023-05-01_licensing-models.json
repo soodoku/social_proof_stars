@@ -1,0 +1,1 @@
+{"last_update": "2023-05-30 02:00:25", "query": {"bytes_billed": 38797312, "bytes_processed": 38309188, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-04-30", "--end-date", "2023-05-01", "licensing-models"]}

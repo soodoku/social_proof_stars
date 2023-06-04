@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 05:04:24", "query": {"bytes_billed": 68157440, "bytes_processed": 67377260, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 8}], "args": ["pypinfo", "-j", "--start-date", "2023-04-28", "--end-date", "2023-04-29", "lazytensor"]}

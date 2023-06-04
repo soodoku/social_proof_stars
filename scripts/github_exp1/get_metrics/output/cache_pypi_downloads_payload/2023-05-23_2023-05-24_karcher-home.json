@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 07:02:44", "query": {"bytes_billed": 47185920, "bytes_processed": 46335522, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-23", "--end-date", "2023-05-24", "karcher-home"]}

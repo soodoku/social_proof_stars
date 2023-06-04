@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 08:26:04", "query": {"bytes_billed": 202375168, "bytes_processed": 202128105, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-27", "--end-date", "2023-05-28", "gis-conflation-toolchain"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 04:11:40", "query": {"bytes_billed": 53477376, "bytes_processed": 52991387, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-16", "--end-date", "2023-05-17", "pygame-json-ui"]}

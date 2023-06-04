@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 10:29:22", "query": {"bytes_billed": 195035136, "bytes_processed": 194970296, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-27", "--end-date", "2023-05-28", "antchain-partner"]}

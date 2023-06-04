@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 10:30:42", "query": {"bytes_billed": 103809024, "bytes_processed": 103740321, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-24", "--end-date", "2023-05-25", "odoo14-addon-website-sale-filter-product-brand"]}

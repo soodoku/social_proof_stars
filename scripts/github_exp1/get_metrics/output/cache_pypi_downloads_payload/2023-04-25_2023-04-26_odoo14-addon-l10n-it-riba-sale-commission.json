@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 11:30:44", "query": {"bytes_billed": 58720256, "bytes_processed": 58068417, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-04-25", "--end-date", "2023-04-26", "odoo14-addon-l10n-it-riba-sale-commission"]}

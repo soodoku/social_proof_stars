@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 11:41:56", "query": {"bytes_billed": 41943040, "bytes_processed": 41660250, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-05-02", "--end-date", "2023-05-03", "hydrogibs"]}

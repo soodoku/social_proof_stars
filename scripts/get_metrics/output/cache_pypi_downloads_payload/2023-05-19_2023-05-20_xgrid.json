@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 09:29:27", "query": {"bytes_billed": 46137344, "bytes_processed": 46009119, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 7}], "args": ["pypinfo", "-j", "--start-date", "2023-05-19", "--end-date", "2023-05-20", "xgrid"]}

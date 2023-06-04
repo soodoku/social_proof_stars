@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 10:47:07", "query": {"bytes_billed": 46137344, "bytes_processed": 45967204, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-14", "--end-date", "2023-05-15", "medcam3d"]}

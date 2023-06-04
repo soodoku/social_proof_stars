@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 04:29:00", "query": {"bytes_billed": 52428800, "bytes_processed": 52392847, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-04-28", "--end-date", "2023-04-29", "local-age-detection-python-backend"]}

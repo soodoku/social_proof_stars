@@ -1,1 +1,0 @@
-{"last_update": "2023-05-31 10:05:38", "query": {"bytes_billed": 159383552, "bytes_processed": 159231716, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-30", "--end-date", "2023-05-31", "nsepythonserver"]}

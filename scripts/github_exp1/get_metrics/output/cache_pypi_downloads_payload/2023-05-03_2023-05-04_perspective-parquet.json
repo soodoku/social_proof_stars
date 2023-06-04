@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 03:34:35", "query": {"bytes_billed": 39845888, "bytes_processed": 39702444, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-05-03", "--end-date", "2023-05-04", "perspective-parquet"]}

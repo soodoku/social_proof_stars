@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 10:24:52", "query": {"bytes_billed": 19922944, "bytes_processed": 19094425, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 3}], "args": ["pypinfo", "-j", "--start-date", "2023-05-22", "--end-date", "2023-05-23", "parsel-get-selector-text"]}

@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 09:08:50", "query": {"bytes_billed": 49283072, "bytes_processed": 48882798, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 46}], "args": ["pypinfo", "-j", "--start-date", "2023-04-29", "--end-date", "2023-04-30", "myfxbook"]}

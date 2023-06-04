@@ -1,0 +1,1 @@
+{"last_update": "2023-05-31 09:37:52", "query": {"bytes_billed": 227540992, "bytes_processed": 227057035, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-30", "--end-date", "2023-05-31", "bioplotz"]}

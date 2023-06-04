@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 08:33:02", "query": {"bytes_billed": 140509184, "bytes_processed": 140290587, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-14", "--end-date", "2023-05-15", "odoo-addon-hr-attendance-calendar-view"]}

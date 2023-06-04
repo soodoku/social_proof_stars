@@ -1,1 +1,0 @@
-{"last_update": "2023-05-30 03:45:14", "query": {"bytes_billed": 48234496, "bytes_processed": 47780804, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 8}], "args": ["pypinfo", "-j", "--start-date", "2023-05-04", "--end-date", "2023-05-05", "typst-pyimage"]}

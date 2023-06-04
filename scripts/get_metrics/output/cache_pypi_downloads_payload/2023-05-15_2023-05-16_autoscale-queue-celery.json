@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 10:26:04", "query": {"bytes_billed": 49283072, "bytes_processed": 49154679, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-15", "--end-date", "2023-05-16", "autoscale-queue-celery"]}

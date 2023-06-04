@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 09:27:17", "query": {"bytes_billed": 154140672, "bytes_processed": 153686958, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-04", "--end-date", "2023-05-05", "plexprefernonforcedsubs"]}

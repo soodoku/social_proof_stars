@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 04:08:46", "query": {"bytes_billed": 45088768, "bytes_processed": 44905082, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-21", "--end-date", "2023-05-22", "cloudflare-images"]}

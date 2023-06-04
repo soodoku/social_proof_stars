@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 11:09:05", "query": {"bytes_billed": 96468992, "bytes_processed": 96151726, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 28}], "args": ["pypinfo", "-j", "--start-date", "2023-05-03", "--end-date", "2023-05-04", "chowlk-unofficial-fork"]}

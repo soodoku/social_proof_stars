@@ -1,0 +1,1 @@
+{"last_update": "2023-05-29 03:37:08", "query": {"bytes_billed": 182452224, "bytes_processed": 181802103, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-28", "--end-date", "2023-05-29", "merlon"]}

@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 10:26:21", "query": {"bytes_billed": 0, "bytes_processed": 0, "cached": true, "estimated_cost": "0.00"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-26", "--end-date", "2023-05-27", "pysigma-backend-sentinelone"]}

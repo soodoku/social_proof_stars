@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 11:15:52", "query": {"bytes_billed": 97517568, "bytes_processed": 97477609, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 9}], "args": ["pypinfo", "-j", "--start-date", "2023-05-15", "--end-date", "2023-05-16", "multiversx-sdk-transaction-decoder"]}

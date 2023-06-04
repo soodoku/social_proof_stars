@@ -1,1 +1,0 @@
-{"last_update": "2023-05-29 11:04:59", "query": {"bytes_billed": 33554432, "bytes_processed": 33124209, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-17", "--end-date", "2023-05-18", "hpsandbox"]}

@@ -1,1 +1,0 @@
-{"last_update": "2023-05-28 07:06:59", "query": {"bytes_billed": 18874368, "bytes_processed": 18863004, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 8}], "args": ["pypinfo", "-j", "--start-date", "2023-05-11", "--end-date", "2023-05-12", "payu-websdk"]}

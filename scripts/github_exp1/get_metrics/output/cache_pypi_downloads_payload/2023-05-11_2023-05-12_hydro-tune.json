@@ -1,0 +1,1 @@
+{"last_update": "2023-05-30 01:34:32", "query": {"bytes_billed": 34603008, "bytes_processed": 34030846, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-05-11", "--end-date", "2023-05-12", "hydro-tune"]}

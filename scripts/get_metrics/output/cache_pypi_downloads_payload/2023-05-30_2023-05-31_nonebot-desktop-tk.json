@@ -1,1 +1,0 @@
-{"last_update": "2023-05-31 09:43:22", "query": {"bytes_billed": 127926272, "bytes_processed": 127173108, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-30", "--end-date", "2023-05-31", "nonebot-desktop-tk"]}

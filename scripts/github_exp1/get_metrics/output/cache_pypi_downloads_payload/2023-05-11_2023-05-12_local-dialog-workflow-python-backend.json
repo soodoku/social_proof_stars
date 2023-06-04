@@ -1,0 +1,1 @@
+{"last_update": "2023-05-28 10:36:16", "query": {"bytes_billed": 26214400, "bytes_processed": 25487495, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 56}], "args": ["pypinfo", "-j", "--start-date", "2023-05-11", "--end-date", "2023-05-12", "local-dialog-workflow-python-backend"]}
