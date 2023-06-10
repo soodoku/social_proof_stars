@@ -2,35 +2,31 @@
 %%% (https://github.com/worldbank/ietoolkit)
 %%% (https://dimewiki.worldbank.org/iebaltab)
 %%% The command was specified exactly like this: 
-%%% iebaltab year_created fork size_mb stargazers_count watchers_count has_issues forks open_issues subscribers_count n_topic python_lang , total groupvar(treated) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated @ ) rowlabels( year_created "Year created" @ fork "Forked = 1" @ size_mb "Repository size" @ stargazers_count "Stars" @ has_issues "Has issues = 1" @ forks "Number of forks" @ open_issues "Number of open issues" @ subscribers_count "Subscribers" @ n_topics "Number of topics listed" @ python_lang "Python = 1" ) savetex(../output/baltest-repo-treated-01.tex) replace
+%%% iebaltab size_mb fork year_created subscribers_count has_issues forks open_issues n_topic python_lang , total groupvar(treated) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated @ ) order(0 1) control(0) grouplabels(0 "Control packages" @ 1 "Treated packages") rowlabels( size_mb "Repository size" @ year_created "Year created" @ fork "Forked = 1" @ subscribers_count "Subscribers" @ has_issues "Has issues = 1" @ forks "Number of forks" @ open_issues "Number of open issues" @ n_topics "Number of topics listed" @ python_lang "Python = 1" ) totallabel(Full sample) format(%9.2f) savetex(../output/baltest-repo-treated-01.tex) replace
 
 \begin{tabular}{@{\extracolsep{5pt}}lcccccccc}
 \\[-1.8ex]\hline \hline \\[-1.8ex]
- & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(3)}  & \multicolumn{2}{c}{(2)-(3)} \\
- & \multicolumn{2}{c}{Total}  & \multicolumn{2}{c}{Control}  & \multicolumn{2}{c}{Treated}  & \multicolumn{2}{c}{Pairwise t-test}  \\
+ & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(3)}  & \multicolumn{2}{c}{(3)-(2)} \\
+ & \multicolumn{2}{c}{Full sample}  & \multicolumn{2}{c}{Control packages}  & \multicolumn{2}{c}{Treated packages}  & \multicolumn{2}{c}{Pairwise t-test}  \\
 Variable & N & Mean/(SE) & N & Mean/(SE) & N & Mean/(SE) & N & Normalized difference \\ \hline \\[-1.8ex] 
-Year created   & 582    & 2022.311    & 485    & 2022.318    & 97    & 2022.278    & 582    & 0.021   \\
- &   & (0.077)  &   & (0.084)  &   & (0.197)  &   &  \\ [1ex]
-Forked = 1   & 582    & 0.040    & 485    & 0.037    & 97    & 0.052    & 582    & -0.070   \\
- &   & (0.008)  &   & (0.009)  &   & (0.023)  &   &  \\ [1ex]
-Repository size   & 582    & 7.847    & 485    & 8.440    & 97    & 4.886    & 582    & 0.142   \\
- &   & (1.220)  &   & (1.426)  &   & (1.633)  &   &  \\ [1ex]
-Stars   & 582    & 69.189    & 485    & 53.214    & 97    & 149.062    & 582    & -0.161*   \\
- &   & (19.449)  &   & (17.671)  &   & (76.056)  &   &  \\ [1ex]
-watchers\_count   & 582    & 69.189    & 485    & 53.214    & 97    & 149.062    & 582    & -0.161*   \\
- &   & (19.449)  &   & (17.671)  &   & (76.056)  &   &  \\ [1ex]
-Has issues = 1   & 582    & 0.957    & 485    & 0.959    & 97    & 0.948    & 582    & 0.049   \\
- &   & (0.008)  &   & (0.009)  &   & (0.023)  &   &  \\ [1ex]
-Number of forks   & 582    & 19.871    & 485    & 15.221    & 97    & 43.124    & 582    & -0.177**   \\
- &   & (4.782)  &   & (3.919)  &   & (20.890)  &   &  \\ [1ex]
-Number of open issues   & 582    & 4.569    & 485    & 4.190    & 97    & 6.464    & 582    & -0.084   \\
- &   & (1.142)  &   & (1.263)  &   & (2.669)  &   &  \\ [1ex]
-Subscribers   & 582    & 4.328    & 485    & 3.843    & 97    & 6.753    & 582    & -0.181**   \\
- &   & (0.538)  &   & (0.502)  &   & (2.020)  &   &  \\ [1ex]
-Number of topics listed   & 582    & 1.763    & 485    & 1.763    & 97    & 1.763    & 582    & 0.000   \\
- &   & (0.140)  &   & (0.153)  &   & (0.350)  &   &  \\ [1ex]
-Python = 1   & 582    & 0.863    & 485    & 0.870    & 97    & 0.825    & 582    & 0.126   \\
- &   & (0.014)  &   & (0.015)  &   & (0.039)  &   &  \\ [1ex]
+Repository size   & 582    & 7.85    & 485    & 8.44    & 97    & 4.89    & 582    & -0.14   \\
+ &   & (1.22)  &   & (1.43)  &   & (1.63)  &   &  \\ [1ex]
+Forked = 1   & 582    & 0.04    & 485    & 0.04    & 97    & 0.05    & 582    & 0.07   \\
+ &   & (0.01)  &   & (0.01)  &   & (0.02)  &   &  \\ [1ex]
+Year created   & 582    & 2022.31    & 485    & 2022.32    & 97    & 2022.28    & 582    & -0.02   \\
+ &   & (0.08)  &   & (0.08)  &   & (0.20)  &   &  \\ [1ex]
+Subscribers   & 582    & 4.33    & 485    & 3.84    & 97    & 6.75    & 582    & 0.18**   \\
+ &   & (0.54)  &   & (0.50)  &   & (2.02)  &   &  \\ [1ex]
+Has issues = 1   & 582    & 0.96    & 485    & 0.96    & 97    & 0.95    & 582    & -0.05   \\
+ &   & (0.01)  &   & (0.01)  &   & (0.02)  &   &  \\ [1ex]
+Number of forks   & 582    & 19.87    & 485    & 15.22    & 97    & 43.12    & 582    & 0.18**   \\
+ &   & (4.78)  &   & (3.92)  &   & (20.89)  &   &  \\ [1ex]
+Number of open issues   & 582    & 4.57    & 485    & 4.19    & 97    & 6.46    & 582    & 0.08   \\
+ &   & (1.14)  &   & (1.26)  &   & (2.67)  &   &  \\ [1ex]
+Number of topics listed   & 582    & 1.76    & 485    & 1.76    & 97    & 1.76    & 582    & 0.00   \\
+ &   & (0.14)  &   & (0.15)  &   & (0.35)  &   &  \\ [1ex]
+Python = 1   & 582    & 0.86    & 485    & 0.87    & 97    & 0.82    & 582    & -0.13   \\
+ &   & (0.01)  &   & (0.02)  &   & (0.04)  &   &  \\ [1ex]
 \hline \hline \\[-1.8ex]
 
 \end{tabular}

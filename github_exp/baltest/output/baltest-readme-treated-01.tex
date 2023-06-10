@@ -1,0 +1,20 @@
+%%% Table created in Stata by command iebaltab
+%%% (https://github.com/worldbank/ietoolkit)
+%%% (https://dimewiki.worldbank.org/iebaltab)
+%%% The command was specified exactly like this: 
+%%% iebaltab raw_readme_len processed_readme_len n_requirements , total groupvar(treated) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated @ ) order(0 1) control(0) grouplabels(0 "Control packages" @ 1 "Treated packages") rowlabels( raw_readme_len "Package description length" @ processed_readme_len "Package description length (cleaned)" @ n_requirements "Number of dependencies" @ ) totallabel(Full sample) format(%9.2f) savetex(../output/baltest-readme-treated-01.tex) replace
+
+\begin{tabular}{@{\extracolsep{5pt}}lcccccccc}
+\\[-1.8ex]\hline \hline \\[-1.8ex]
+ & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(3)}  & \multicolumn{2}{c}{(3)-(2)} \\
+ & \multicolumn{2}{c}{Full sample}  & \multicolumn{2}{c}{Control packages}  & \multicolumn{2}{c}{Treated packages}  & \multicolumn{2}{c}{Pairwise t-test}  \\
+Variable & N & Mean/(SE) & N & Mean/(SE) & N & Mean/(SE) & N & Normalized difference \\ \hline \\[-1.8ex] 
+Package description length   & 622    & 2458.61    & 522    & 2516.53    & 100    & 2156.24    & 622    & -0.11   \\
+ &   & (143.49)  &   & (161.85)  &   & (287.41)  &   &  \\ [1ex]
+Package description length (cleaned)   & 622    & 2363.36    & 522    & 2416.14    & 100    & 2087.89    & 622    & -0.10   \\
+ &   & (138.58)  &   & (156.14)  &   & (280.47)  &   &  \\ [1ex]
+Number of dependencies   & 622    & 3.73    & 522    & 3.60    & 100    & 4.36    & 622    & 0.10   \\
+ &   & (0.31)  &   & (0.34)  &   & (0.66)  &   &  \\ [1ex]
+\hline \hline \\[-1.8ex]
+
+\end{tabular}

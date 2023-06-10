@@ -2,37 +2,37 @@
 %%% (https://github.com/worldbank/ietoolkit)
 %%% (https://dimewiki.worldbank.org/iebaltab)
 %%% The command was specified exactly like this: 
-%%% iebaltab public_repos public_gists followers following year_created year_updated org list_co list_email list_blog list_bio bio_size , total groupvar(treated) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated @ ) rowlabels( public_repos "Number of repositories" @ public_gists "Number of gists" @ followers "Number of followers" @ following "Number of people followed" @ year_created "Year created" @ year_updated "Year updated" @ org "Organization" @ list_co "List company" @ list_email "List email" @ list_blog "List personal site" @ list_bio "List brief bio" @ bio_size "Brief bio length" @ ) savetex(../output/baltest-user-treated-01.tex) replace
+%%% iebaltab public_repos public_gists followers following year_created year_updated org list_co list_email list_blog list_bio bio_size , total groupvar(treated) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated @ ) order(0 1) control(0) grouplabels(0 "Control packages" @ 1 "Treated packages") rowlabels( public_repos "Number of repositories" @ public_gists "Number of gists" @ followers "Number of followers" @ following "Number of people followed" @ year_created "Year created" @ year_updated "Year updated" @ org "Organization = 1" @ list_co "List company = 1" @ list_email "List email = 1" @ list_blog "List personal site = 1" @ list_bio "List brief bio = 1" @ bio_size "Brief bio length" @ ) totallabel(Full sample) format(%9.2f) savetex(../output/baltest-user-treated-01.tex) replace
 
 \begin{tabular}{@{\extracolsep{5pt}}lcccccccc}
 \\[-1.8ex]\hline \hline \\[-1.8ex]
- & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(3)}  & \multicolumn{2}{c}{(2)-(3)} \\
- & \multicolumn{2}{c}{Total}  & \multicolumn{2}{c}{Control}  & \multicolumn{2}{c}{Treated}  & \multicolumn{2}{c}{Pairwise t-test}  \\
+ & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(3)}  & \multicolumn{2}{c}{(3)-(2)} \\
+ & \multicolumn{2}{c}{Full sample}  & \multicolumn{2}{c}{Control packages}  & \multicolumn{2}{c}{Treated packages}  & \multicolumn{2}{c}{Pairwise t-test}  \\
 Variable & N & Mean/(SE) & N & Mean/(SE) & N & Mean/(SE) & N & Normalized difference \\ \hline \\[-1.8ex] 
-Number of repositories   & 545    & 57.565    & 453    & 51.799    & 92    & 85.957    & 545    & -0.113   \\
- &   & (12.879)  &   & (14.062)  &   & (32.050)  &   &  \\ [1ex]
-Number of gists   & 545    & 3.281    & 453    & 3.031    & 92    & 4.511    & 545    & -0.102   \\
- &   & (0.557)  &   & (0.572)  &   & (1.723)  &   &  \\ [1ex]
-Number of followers   & 545    & 189.853    & 453    & 194.563    & 92    & 166.663    & 545    & 0.019   \\
- &   & (78.363)  &   & (93.344)  &   & (66.055)  &   &  \\ [1ex]
-Number of people followed   & 545    & 11.398    & 453    & 10.806    & 92    & 14.315    & 545    & -0.105   \\
- &   & (1.439)  &   & (1.583)  &   & (3.450)  &   &  \\ [1ex]
-Year created   & 545    & 2017.330    & 453    & 2017.426    & 92    & 2016.859    & 545    & 0.156   \\
- &   & (0.160)  &   & (0.178)  &   & (0.362)  &   &  \\ [1ex]
-Year updated   & 545    & 2017.330    & 453    & 2017.426    & 92    & 2016.859    & 545    & 0.156   \\
- &   & (0.160)  &   & (0.178)  &   & (0.362)  &   &  \\ [1ex]
-Organization   & 545    & 0.224    & 453    & 0.219    & 92    & 0.250    & 545    & -0.074   \\
- &   & (0.018)  &   & (0.019)  &   & (0.045)  &   &  \\ [1ex]
-List company   & 545    & 0.272    & 453    & 0.258    & 92    & 0.337    & 545    & -0.172   \\
- &   & (0.019)  &   & (0.021)  &   & (0.050)  &   &  \\ [1ex]
-List email   & 545    & 0.323    & 453    & 0.320    & 92    & 0.337    & 545    & -0.036   \\
- &   & (0.020)  &   & (0.022)  &   & (0.050)  &   &  \\ [1ex]
-List personal site   & 545    & 0.462    & 453    & 0.453    & 92    & 0.511    & 545    & -0.117   \\
- &   & (0.021)  &   & (0.023)  &   & (0.052)  &   &  \\ [1ex]
-List brief bio   & 545    & 0.479    & 453    & 0.472    & 92    & 0.511    & 545    & -0.077   \\
- &   & (0.021)  &   & (0.023)  &   & (0.052)  &   &  \\ [1ex]
-Brief bio length   & 545    & 28.442    & 453    & 28.943    & 92    & 25.978    & 545    & 0.075   \\
- &   & (1.747)  &   & (1.953)  &   & (3.839)  &   &  \\ [1ex]
+Number of repositories   & 545    & 57.57    & 453    & 51.80    & 92    & 85.96    & 545    & 0.11   \\
+ &   & (12.88)  &   & (14.06)  &   & (32.05)  &   &  \\ [1ex]
+Number of gists   & 545    & 3.28    & 453    & 3.03    & 92    & 4.51    & 545    & 0.10   \\
+ &   & (0.56)  &   & (0.57)  &   & (1.72)  &   &  \\ [1ex]
+Number of followers   & 545    & 189.85    & 453    & 194.56    & 92    & 166.66    & 545    & -0.02   \\
+ &   & (78.36)  &   & (93.34)  &   & (66.05)  &   &  \\ [1ex]
+Number of people followed   & 545    & 11.40    & 453    & 10.81    & 92    & 14.32    & 545    & 0.11   \\
+ &   & (1.44)  &   & (1.58)  &   & (3.45)  &   &  \\ [1ex]
+Year created   & 545    & 2017.33    & 453    & 2017.43    & 92    & 2016.86    & 545    & -0.16   \\
+ &   & (0.16)  &   & (0.18)  &   & (0.36)  &   &  \\ [1ex]
+Year updated   & 545    & 2017.33    & 453    & 2017.43    & 92    & 2016.86    & 545    & -0.16   \\
+ &   & (0.16)  &   & (0.18)  &   & (0.36)  &   &  \\ [1ex]
+Organization = 1   & 545    & 0.22    & 453    & 0.22    & 92    & 0.25    & 545    & 0.07   \\
+ &   & (0.02)  &   & (0.02)  &   & (0.05)  &   &  \\ [1ex]
+List company = 1   & 545    & 0.27    & 453    & 0.26    & 92    & 0.34    & 545    & 0.17   \\
+ &   & (0.02)  &   & (0.02)  &   & (0.05)  &   &  \\ [1ex]
+List email = 1   & 545    & 0.32    & 453    & 0.32    & 92    & 0.34    & 545    & 0.04   \\
+ &   & (0.02)  &   & (0.02)  &   & (0.05)  &   &  \\ [1ex]
+List personal site = 1   & 545    & 0.46    & 453    & 0.45    & 92    & 0.51    & 545    & 0.12   \\
+ &   & (0.02)  &   & (0.02)  &   & (0.05)  &   &  \\ [1ex]
+List brief bio = 1   & 545    & 0.48    & 453    & 0.47    & 92    & 0.51    & 545    & 0.08   \\
+ &   & (0.02)  &   & (0.02)  &   & (0.05)  &   &  \\ [1ex]
+Brief bio length   & 545    & 28.44    & 453    & 28.94    & 92    & 25.98    & 545    & -0.08   \\
+ &   & (1.75)  &   & (1.95)  &   & (3.84)  &   &  \\ [1ex]
 \hline \hline \\[-1.8ex]
 
 \end{tabular}

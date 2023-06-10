@@ -2,7 +2,7 @@
       name:  <unnamed>
        log:  \\wsl.localhost\Debian\home\lsys\social_proof_stars\github_exp\baltest\src\../output/stata-log.txt
   log type:  text
- opened on:   9 Jun 2023, 18:04:38
+ opened on:  10 Jun 2023, 10:57:34
 
 . 
 . version 13              // Still on version 13 :(
@@ -25,32 +25,9 @@
   4. }
 
 . 
-. global repo_baselines year_created fork size_mb stargazers_count watchers_count has_issues forks open_issues subscribe
-> rs_count n_topic python_lang
+. global repo_baselines size_mb fork year_created subscribers_count has_issues forks open_issues n_topic python_lang
 
 . 
-. su $global
-
-    Variable |       Obs        Mean    Std. Dev.       Min        Max
--------------+--------------------------------------------------------
-year_created |       582    2022.311    1.868624       2012       2023
-        fork |       582    .0395189    .1949936          0          1
-     treated |       582    .1666667    .3729986          0          1
-    treated2 |       582    .2079038    .4975735          0          2
-     size_mb |       582    7.847388    29.42956          0   306.3408
--------------+--------------------------------------------------------
-stargazers~t |       582      69.189    469.2003          0       5777
-watchers_c~t |       582      69.189    469.2003          0       5777
-language_str |         0
-  has_issues |       582    .9570447    .2029308          0          1
-       forks |       582    19.87113    115.3656          0       1682
--------------+--------------------------------------------------------
- open_issues |       582    4.568729    27.54732          0        546
-subscriber~t |       582    4.328179    12.98419          0        109
-    n_topics |       582    1.762887    3.375338          0         20
- python_lang |       582     .862543    .3446254          0          1
-    language |       571    12.49387    1.811624          1         17
-
 . 
 . #delimit;
 delimiter now ;
@@ -66,19 +43,24 @@ delimiter now ;
 >         grplabels(
 >                 0 Control @
 >                 1 Treated @
->                 )       
+>                 )
+>         order(0 1)
+>         control(0)
+>         grouplabels(0 "Control packages" @ 1 "Treated packages")
 >         rowlabels(
+>                 size_mb "Repository size" @
 >                 year_created "Year created" @
 >                 fork "Forked = 1" @
->                 size_mb "Repository size" @
->                 stargazers_count "Stars" @
+>                 // stargazers_count "Stars" @
+>                 subscribers_count "Subscribers" @
 >                 has_issues "Has issues = 1" @
 >                 forks "Number of forks" @
 >                 open_issues "Number of open issues" @
->                 subscribers_count "Subscribers" @
 >                 n_topics "Number of topics listed" @
 >                 python_lang     "Python = 1"
 >                 )
+>         totallabel(Full sample)
+>         format(%9.2f)
 >         savetex(../output/baltest-repo-treated-01.tex) 
 >         replace
 > ;
@@ -90,7 +72,6 @@ delimiter now ;
 . iebaltab 
 >         $repo_baselines
 >         ,
->         total
 >         groupvar(treated2)
 >         // ftest
 >         star(.1 .05 .01)
@@ -101,11 +82,14 @@ delimiter now ;
 >                 1 Treated (low) @
 >                 2 Treated (high) @
 >                 )       
+>         order(0 1 2)
+>         control(0)
+>         grouplabels(0 "Control packages" @ 1 "Treated (low dose)" @ 2 "Treated (high dose)")
 >         rowlabels(
 >                 year_created "Year created" @
 >                 fork "Forked = 1" @
 >                 size_mb "Repository size" @
->                 stargazers_count "Stars" @
+>                 // stargazers_count "Stars" @
 >                 has_issues "Has issues = 1" @
 >                 forks "Number of forks" @
 >                 open_issues "Number of open issues" @
@@ -113,6 +97,7 @@ delimiter now ;
 >                 n_topics "Number of topics listed" @
 >                 python_lang     "Python = 1"
 >                 )
+>         format(%9.2f)
 >         savetex(../output/baltest-repo-treated-012.tex) 
 >         replace
 > ;
@@ -121,6 +106,7 @@ delimiter now ;
 
 . #delimit cr
 delimiter now cr
+. 
 . 
 . // -----------------------------------------------------------------------------
 . * User baselines
@@ -144,10 +130,13 @@ delimiter now ;
 >         star(.1 .05 .01)
 >         stats(pair(nrmd))
 >         nonote
->                 grplabels(
+>         grplabels(
 >                 0 Control @
 >                 1 Treated @
 >                 )       
+>         order(0 1)
+>         control(0)
+>         grouplabels(0 "Control packages" @ 1 "Treated packages")
 >         rowlabels(
 >                 public_repos "Number of repositories" @ 
 >                 public_gists "Number of gists" @
@@ -155,13 +144,15 @@ delimiter now ;
 >                 following "Number of people followed" @
 >                 year_created "Year created" @
 >                 year_updated "Year updated" @
->                 org "Organization" @
->                 list_co "List company" @
->                 list_email "List email" @
->                 list_blog "List personal site" @
->                 list_bio "List brief bio" @
+>                 org "Organization = 1" @
+>                 list_co "List company = 1" @
+>                 list_email "List email = 1" @
+>                 list_blog "List personal site = 1" @
+>                 list_bio "List brief bio = 1" @
 >                 bio_size "Brief bio length" @
 >                 )
+>         totallabel(Full sample)
+>         format(%9.2f)
 >         savetex(../output/baltest-user-treated-01.tex) 
 >         replace
 > ;
@@ -173,17 +164,18 @@ delimiter now ;
 . iebaltab 
 >         $user_baselines
 >         ,
->         total
 >         groupvar(treated2)
 >         // ftest
 >         star(.1 .05 .01)
 >         stats(pair(nrmd))
 >         nonote
->                 grplabels(
+>         grplabels(
 >                 0 Control @
 >                 1 Treated (low) @
 >                 2 Treated (high) @
 >                 )       
+>         order(0 1 2)
+>         control(0)
 >         rowlabels(
 >                 public_repos "Number of repositories" @ 
 >                 public_gists "Number of gists" @
@@ -198,12 +190,90 @@ delimiter now ;
 >                 list_bio "List brief bio" @
 >                 bio_size "Brief bio length" @
 >                 )
+>         format(%9.2f)
 >         savetex(../output/baltest-user-treated-012.tex) 
 >         replace
 > ;
 
     Balance table saved in LaTeX format to: ../output/baltest-user-treated-012.tex
 
+. #delimit cr
+delimiter now cr
 . 
-end of do-file
+. // -----------------------------------------------------------------------------
+. * User baselines
+. // -----------------------------------------------------------------------------
+. use "../../get_baseline_profile/output/pkg_readme_requirements_baselines.dta", clear
 
+. 
+. 
+. #delimit;
+delimiter now ;
+. iebaltab 
+>         raw_readme_len processed_readme_len n_requirements
+>         ,
+>         total
+>         groupvar(treated)
+>         star(.1 .05 .01)
+>         stats(pair(nrmd))
+>         nonote
+>         grplabels(
+>                 0 Control @
+>                 1 Treated @
+>                 )       
+>         order(0 1)
+>         control(0)
+>         grouplabels(0 "Control packages" @ 1 "Treated packages")
+>         rowlabels(
+>                 raw_readme_len "Package description length" @ 
+>                 processed_readme_len "Package description length (cleaned)" @
+>                 n_requirements "Number of dependencies" @
+>                 )
+>         totallabel(Full sample)
+>         format(%9.2f)
+>         savetex(../output/baltest-readme-treated-01.tex) 
+>         replace
+> ;
+
+    Balance table saved in LaTeX format to: ../output/baltest-readme-treated-01.tex
+
+. #delimit;
+delimiter now ;
+. iebaltab 
+>         raw_readme_len processed_readme_len n_requirements
+>         ,
+>         groupvar(treated2)
+>         star(.1 .05 .01)
+>         stats(pair(nrmd))
+>         nonote
+>         grplabels(
+>                 0 Control @
+>                 1 Treated (low) @
+>                 2 Treated (high) @
+>                 )       
+>         order(0 1 2)
+>         control(0)
+>         rowlabels(
+>                 raw_readme_len "Package description length" @ 
+>                 processed_readme_len "Package description length (cleaned)" @
+>                 n_requirements "Number of dependencies" @
+>                 )
+>         format(%9.2f)
+>         savetex(../output/baltest-readme-treated-012.tex) 
+>         replace
+> ;
+
+    Balance table saved in LaTeX format to: ../output/baltest-readme-treated-012.tex
+
+. #delimit cr
+delimiter now cr
+. 
+. 
+. 
+. 
+. log close
+      name:  <unnamed>
+       log:  \\wsl.localhost\Debian\home\lsys\social_proof_stars\github_exp\baltest\src\../output/stata-log.txt
+  log type:  text
+ closed on:  10 Jun 2023, 10:57:35
+------------------------------------------------------------------------------------------------------------------------
