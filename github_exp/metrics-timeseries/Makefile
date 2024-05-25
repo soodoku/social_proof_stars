@@ -5,13 +5,14 @@
 # Link from scripts/get_metrics/output
 ########################################################################
 SYMLINK_OPTS = --symbolic --force --verbose
+HARDLINK_OPTS = --force --verbose
 .PHONY: link
 link: ## Symlink postcode and other maps into input/
 	@echo "==> $@"
 	@echo "Linking input files.."
-	cd input && ln $(SYMLINK_OPTS) ../../sample_and_random_assign/output/random_sample.csv .
-	cd input && ln $(SYMLINK_OPTS) ../../get_metrics/output/pkg_pypi_downloads.csv .
-	cd input && ln $(SYMLINK_OPTS) ../../get_metrics/output/repo_stars_timeseries.csv .
+	cd input && ln $(HARDLINK_OPTS) ../../sample_and_random_assign/output/random_sample.csv .
+	cd input && ln $(HARDLINK_OPTS) ../../get_metrics/output/pkg_pypi_downloads.csv .
+	cd input && ln $(HARDLINK_OPTS) ../../get_metrics/output/repo_stars_timeseries.csv .
 
 .PHONY: purgei
 purgei: ## Purge all symlinks in input/
