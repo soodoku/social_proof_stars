@@ -12,7 +12,7 @@ local cutoff_date_str 2023-05-19
 gen cutoff_date= date("`cutoff_date_str'", "YMD")
 gen t = date - cutoff_date
 
-local end_date = date("2023-06-10", "YMD")
+local end_date = date("2023-08-02", "YMD")
 local delta_days_obs = `end_date' - date("`cutoff_date_str'", "YMD") + 1
 
 local post_snapshot_date 2023-06-02
