@@ -1,0 +1,1 @@
+{"last_update": "2023-07-22 08:30:52", "query": {"bytes_billed": 132120576, "bytes_processed": 131173716, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-21", "--end-date", "2023-07-22", "mpxl2csv"]}

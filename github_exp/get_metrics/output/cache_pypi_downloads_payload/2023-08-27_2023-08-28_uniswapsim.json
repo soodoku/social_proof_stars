@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 15:55:08", "query": {"bytes_billed": 47185920, "bytes_processed": 46445663, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-08-27", "--end-date", "2023-08-28", "uniswapsim"]}

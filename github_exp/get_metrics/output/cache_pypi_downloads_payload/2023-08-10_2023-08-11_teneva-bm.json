@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 13:06:27", "query": {"bytes_billed": 46137344, "bytes_processed": 45334502, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 5}], "args": ["pypinfo", "-j", "--start-date", "2023-08-10", "--end-date", "2023-08-11", "teneva-bm"]}

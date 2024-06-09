@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 02:51:58", "query": {"bytes_billed": 136314880, "bytes_processed": 135576290, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-28", "--end-date", "2023-07-29", "catalyst-lib"]}

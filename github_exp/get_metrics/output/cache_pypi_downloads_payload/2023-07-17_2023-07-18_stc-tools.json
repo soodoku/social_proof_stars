@@ -1,0 +1,1 @@
+{"last_update": "2023-07-23 07:58:48", "query": {"bytes_billed": 75497472, "bytes_processed": 74614738, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-17", "--end-date", "2023-07-18", "stc-tools"]}

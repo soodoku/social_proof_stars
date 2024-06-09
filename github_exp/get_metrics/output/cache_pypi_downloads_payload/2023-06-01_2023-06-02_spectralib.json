@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 14:29:23", "query": {"bytes_billed": 40894464, "bytes_processed": 40113092, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-06-01", "--end-date", "2023-06-02", "spectralib"]}

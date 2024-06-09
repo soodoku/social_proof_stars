@@ -1,0 +1,1 @@
+{"last_update": "2023-06-12 07:40:54", "query": {"bytes_billed": 137363456, "bytes_processed": 136615551, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-06-11", "--end-date", "2023-06-12", "kaggle-util"]}

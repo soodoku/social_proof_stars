@@ -1,0 +1,1 @@
+{"last_update": "2023-07-23 08:09:29", "query": {"bytes_billed": 336592896, "bytes_processed": 335584738, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-18", "--end-date", "2023-07-19", "ifrappe-bench"]}

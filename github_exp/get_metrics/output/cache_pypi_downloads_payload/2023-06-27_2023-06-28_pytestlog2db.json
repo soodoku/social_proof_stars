@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 02:19:43", "query": {"bytes_billed": 73400320, "bytes_processed": 72526224, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-27", "--end-date", "2023-06-28", "pytestlog2db"]}

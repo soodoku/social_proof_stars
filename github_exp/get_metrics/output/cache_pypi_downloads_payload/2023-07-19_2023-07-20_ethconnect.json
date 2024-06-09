@@ -1,0 +1,1 @@
+{"last_update": "2023-07-23 08:06:34", "query": {"bytes_billed": 93323264, "bytes_processed": 92283053, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-19", "--end-date", "2023-07-20", "ethconnect"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:31:41", "query": {"bytes_billed": 34603008, "bytes_processed": 33923255, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-06-05", "--end-date", "2023-06-06", "fuzzyfiles"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-07-04 17:46:58", "query": {"bytes_billed": 14680064, "bytes_processed": 13689359, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-04", "--end-date", "2023-07-05", "langforge-ai"]}

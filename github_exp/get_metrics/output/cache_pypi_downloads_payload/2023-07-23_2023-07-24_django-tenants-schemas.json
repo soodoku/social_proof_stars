@@ -1,0 +1,1 @@
+{"last_update": "2023-07-24 01:59:22", "query": {"bytes_billed": 82837504, "bytes_processed": 82779558, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-23", "--end-date", "2023-07-24", "django-tenants-schemas"]}

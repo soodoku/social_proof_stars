@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 05:13:39", "query": {"bytes_billed": 140509184, "bytes_processed": 140062506, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-07", "--end-date", "2023-07-08", "vue2img"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 12:00:08", "query": {"bytes_billed": 50331648, "bytes_processed": 49900565, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-05", "--end-date", "2023-06-06", "boat-fib-py"]}

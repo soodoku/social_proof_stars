@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:57:53", "query": {"bytes_billed": 234881024, "bytes_processed": 233881892, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-06-08", "--end-date", "2023-06-09", "odoo-addon-purchase-invoice-method"]}

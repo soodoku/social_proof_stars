@@ -1,0 +1,1 @@
+{"last_update": "2023-07-14 04:03:24", "query": {"bytes_billed": 163577856, "bytes_processed": 162567630, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-13", "--end-date", "2023-07-14", "deepfastvision"]}

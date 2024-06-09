@@ -1,0 +1,1 @@
+{"last_update": "2023-07-23 06:14:56", "query": {"bytes_billed": 384827392, "bytes_processed": 384165768, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-15", "--end-date", "2023-07-16", "botocore-a-la-carte-osis"]}

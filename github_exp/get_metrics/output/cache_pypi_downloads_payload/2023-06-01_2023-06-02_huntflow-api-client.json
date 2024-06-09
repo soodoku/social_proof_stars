@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:51:15", "query": {"bytes_billed": 39845888, "bytes_processed": 39692676, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 23}], "args": ["pypinfo", "-j", "--start-date", "2023-06-01", "--end-date", "2023-06-02", "huntflow-api-client"]}

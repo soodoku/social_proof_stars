@@ -1,0 +1,1 @@
+{"last_update": "2023-07-22 08:58:59", "query": {"bytes_billed": 56623104, "bytes_processed": 56324403, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 5}], "args": ["pypinfo", "-j", "--start-date", "2023-07-16", "--end-date", "2023-07-17", "code-bert-score"]}

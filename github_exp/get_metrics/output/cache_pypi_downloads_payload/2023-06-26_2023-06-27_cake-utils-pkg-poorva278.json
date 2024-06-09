@@ -1,0 +1,1 @@
+{"last_update": "2023-06-30 03:23:01", "query": {"bytes_billed": 206569472, "bytes_processed": 205705271, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-26", "--end-date", "2023-06-27", "cake-utils-pkg-poorva278"]}

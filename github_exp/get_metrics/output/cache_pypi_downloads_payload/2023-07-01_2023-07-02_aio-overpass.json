@@ -1,0 +1,1 @@
+{"last_update": "2023-07-05 12:50:24", "query": {"bytes_billed": 40894464, "bytes_processed": 40565528, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-07-01", "--end-date", "2023-07-02", "aio-overpass"]}

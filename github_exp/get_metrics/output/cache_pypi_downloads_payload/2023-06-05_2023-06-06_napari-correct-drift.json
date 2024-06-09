@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:19:46", "query": {"bytes_billed": 47185920, "bytes_processed": 46816688, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-05", "--end-date", "2023-06-06", "napari-correct-drift"]}

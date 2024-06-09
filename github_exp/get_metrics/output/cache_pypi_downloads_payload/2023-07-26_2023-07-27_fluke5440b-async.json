@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 01:23:41", "query": {"bytes_billed": 30408704, "bytes_processed": 29859556, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-26", "--end-date", "2023-07-27", "fluke5440b-async"]}

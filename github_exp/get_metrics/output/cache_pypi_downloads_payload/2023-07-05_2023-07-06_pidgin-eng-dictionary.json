@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 04:25:16", "query": {"bytes_billed": 67108864, "bytes_processed": 66291133, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-05", "--end-date", "2023-07-06", "pidgin-eng-dictionary"]}

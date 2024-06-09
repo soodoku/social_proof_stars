@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 16:52:49", "query": {"bytes_billed": 59768832, "bytes_processed": 59751493, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 123}], "args": ["pypinfo", "-j", "--start-date", "2023-08-24", "--end-date", "2023-08-25", "mujoco-dev"]}

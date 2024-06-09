@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 13:49:21", "query": {"bytes_billed": 60817408, "bytes_processed": 60543901, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-30", "--end-date", "2023-08-31", "nlvwxpython"]}

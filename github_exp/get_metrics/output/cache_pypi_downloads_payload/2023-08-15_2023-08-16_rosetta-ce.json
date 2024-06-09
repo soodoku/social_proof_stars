@@ -1,0 +1,1 @@
+{"last_update": "2024-06-06 01:57:14", "query": {"bytes_billed": 57671680, "bytes_processed": 57022957, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 229}], "args": ["pypinfo", "-j", "--start-date", "2023-08-15", "--end-date", "2023-08-16", "rosetta-ce"]}

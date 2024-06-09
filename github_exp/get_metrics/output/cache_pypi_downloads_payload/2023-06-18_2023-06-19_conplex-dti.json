@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 07:17:58", "query": {"bytes_billed": 57671680, "bytes_processed": 56867954, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 11}], "args": ["pypinfo", "-j", "--start-date", "2023-06-18", "--end-date", "2023-06-19", "conplex-dti"]}

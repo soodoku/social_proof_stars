@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 01:46:43", "query": {"bytes_billed": 35651584, "bytes_processed": 35125578, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-07-02", "--end-date", "2023-07-03", "sonde2kml"]}

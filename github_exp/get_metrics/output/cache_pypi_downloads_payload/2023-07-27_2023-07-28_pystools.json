@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 02:30:01", "query": {"bytes_billed": 74448896, "bytes_processed": 73487018, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 41}], "args": ["pypinfo", "-j", "--start-date", "2023-07-27", "--end-date", "2023-07-28", "pystools"]}

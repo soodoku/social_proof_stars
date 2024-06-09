@@ -1,0 +1,1 @@
+{"last_update": "2023-06-10 02:28:33", "query": {"bytes_billed": 88080384, "bytes_processed": 87694260, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-09", "--end-date", "2023-06-10", "metadynminer"]}

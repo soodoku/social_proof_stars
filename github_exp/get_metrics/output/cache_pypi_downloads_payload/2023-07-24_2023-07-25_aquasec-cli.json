@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 02:10:34", "query": {"bytes_billed": 38797312, "bytes_processed": 38537796, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-24", "--end-date", "2023-07-25", "aquasec-cli"]}

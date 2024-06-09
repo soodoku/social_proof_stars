@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:49:39", "query": {"bytes_billed": 25165824, "bytes_processed": 24572739, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 32}], "args": ["pypinfo", "-j", "--start-date", "2023-06-02", "--end-date", "2023-06-03", "pyfed-macos"]}

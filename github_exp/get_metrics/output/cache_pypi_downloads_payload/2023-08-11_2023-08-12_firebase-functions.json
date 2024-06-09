@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 12:59:53", "query": {"bytes_billed": 72351744, "bytes_processed": 72212530, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2890}], "args": ["pypinfo", "-j", "--start-date", "2023-08-11", "--end-date", "2023-08-12", "firebase-functions"]}

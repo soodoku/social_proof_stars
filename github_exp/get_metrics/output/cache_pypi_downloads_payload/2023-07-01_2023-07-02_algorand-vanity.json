@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 02:44:27", "query": {"bytes_billed": 54525952, "bytes_processed": 53586800, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-07-01", "--end-date", "2023-07-02", "algorand-vanity"]}

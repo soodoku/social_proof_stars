@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 21:16:06", "query": {"bytes_billed": 80740352, "bytes_processed": 80303175, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 283}], "args": ["pypinfo", "-j", "--start-date", "2023-08-01", "--end-date", "2023-08-02", "nemoguardrails"]}

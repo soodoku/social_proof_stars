@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 12:37:02", "query": {"bytes_billed": 116391936, "bytes_processed": 116279806, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-06-07", "--end-date", "2023-06-08", "phonetree"]}

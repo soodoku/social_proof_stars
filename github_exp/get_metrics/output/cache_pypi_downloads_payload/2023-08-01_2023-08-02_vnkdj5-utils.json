@@ -1,0 +1,1 @@
+{"last_update": "2023-08-02 01:04:36", "query": {"bytes_billed": 163577856, "bytes_processed": 162978504, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-01", "--end-date", "2023-08-02", "vnkdj5-utils"]}

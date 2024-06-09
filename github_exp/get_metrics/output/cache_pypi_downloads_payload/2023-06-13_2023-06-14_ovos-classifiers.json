@@ -1,0 +1,1 @@
+{"last_update": "2023-06-23 02:00:34", "query": {"bytes_billed": 47185920, "bytes_processed": 46372220, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 17}], "args": ["pypinfo", "-j", "--start-date", "2023-06-13", "--end-date", "2023-06-14", "ovos-classifiers"]}

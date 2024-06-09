@@ -1,0 +1,1 @@
+{"last_update": "2023-07-22 07:50:31", "query": {"bytes_billed": 82837504, "bytes_processed": 81847122, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 9}], "args": ["pypinfo", "-j", "--start-date", "2023-07-16", "--end-date", "2023-07-17", "huaweicloudsdkmsgsms"]}

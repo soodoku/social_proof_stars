@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 20:26:08", "query": {"bytes_billed": 69206016, "bytes_processed": 68389421, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-14", "--end-date", "2023-08-15", "docamr"]}

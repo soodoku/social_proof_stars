@@ -1,0 +1,1 @@
+{"last_update": "2024-06-06 01:26:10", "query": {"bytes_billed": 45088768, "bytes_processed": 45062217, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-21", "--end-date", "2023-08-22", "pybloomer"]}

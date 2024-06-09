@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 16:49:16", "query": {"bytes_billed": 76546048, "bytes_processed": 75824908, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-23", "--end-date", "2023-08-24", "fastshermanmorrison-pulsar"]}

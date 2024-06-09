@@ -1,0 +1,1 @@
+{"last_update": "2023-07-10 02:29:17", "query": {"bytes_billed": 124780544, "bytes_processed": 124169663, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-09", "--end-date", "2023-07-10", "acnaweblib"]}

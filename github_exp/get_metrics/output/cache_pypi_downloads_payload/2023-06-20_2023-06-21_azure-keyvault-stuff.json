@@ -1,0 +1,1 @@
+{"last_update": "2023-06-23 02:42:59", "query": {"bytes_billed": 77594624, "bytes_processed": 76918139, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-20", "--end-date", "2023-06-21", "azure-keyvault-stuff"]}

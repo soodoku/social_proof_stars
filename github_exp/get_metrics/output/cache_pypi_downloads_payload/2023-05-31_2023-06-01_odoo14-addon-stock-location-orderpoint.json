@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 12:51:42", "query": {"bytes_billed": 125829120, "bytes_processed": 125589693, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-31", "--end-date", "2023-06-01", "odoo14-addon-stock-location-orderpoint"]}

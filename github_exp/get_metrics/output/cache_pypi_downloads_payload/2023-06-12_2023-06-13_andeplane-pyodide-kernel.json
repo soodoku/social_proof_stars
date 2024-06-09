@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 07:17:14", "query": {"bytes_billed": 55574528, "bytes_processed": 55502345, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-12", "--end-date", "2023-06-13", "andeplane-pyodide-kernel"]}

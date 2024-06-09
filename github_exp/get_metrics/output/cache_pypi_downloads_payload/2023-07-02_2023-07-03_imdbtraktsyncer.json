@@ -1,0 +1,1 @@
+{"last_update": "2023-07-05 02:27:56", "query": {"bytes_billed": 15728640, "bytes_processed": 14844332, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-07-02", "--end-date", "2023-07-03", "imdbtraktsyncer"]}

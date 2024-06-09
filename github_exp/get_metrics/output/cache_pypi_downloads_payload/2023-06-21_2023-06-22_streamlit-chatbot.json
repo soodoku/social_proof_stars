@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 07:09:49", "query": {"bytes_billed": 40894464, "bytes_processed": 39893168, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 6}], "args": ["pypinfo", "-j", "--start-date", "2023-06-21", "--end-date", "2023-06-22", "streamlit-chatbot"]}

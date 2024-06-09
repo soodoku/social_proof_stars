@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:26:54", "query": {"bytes_billed": 59768832, "bytes_processed": 59209576, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-05-31", "--end-date", "2023-06-01", "rds-core"]}

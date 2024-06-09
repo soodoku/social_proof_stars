@@ -1,0 +1,1 @@
+{"last_update": "2023-07-14 04:21:58", "query": {"bytes_billed": 134217728, "bytes_processed": 133630479, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-13", "--end-date", "2023-07-14", "qeng-admin-api"]}

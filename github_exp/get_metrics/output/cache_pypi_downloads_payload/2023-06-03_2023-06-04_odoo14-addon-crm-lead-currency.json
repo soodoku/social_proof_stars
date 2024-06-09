@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 12:33:54", "query": {"bytes_billed": 115343360, "bytes_processed": 114330702, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-06-03", "--end-date", "2023-06-04", "odoo14-addon-crm-lead-currency"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-06-30 03:36:07", "query": {"bytes_billed": 35651584, "bytes_processed": 35118989, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-27", "--end-date", "2023-06-28", "wcmp"]}

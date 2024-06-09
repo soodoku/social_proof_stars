@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 09:47:50", "query": {"bytes_billed": 39845888, "bytes_processed": 39016462, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 10}], "args": ["pypinfo", "-j", "--start-date", "2023-08-14", "--end-date", "2023-08-15", "apple-store-scraper"]}
