@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 13:35:36", "query": {"bytes_billed": 158334976, "bytes_processed": 158005936, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-08", "--end-date", "2023-06-09", "airflow-kubernetes-job-operator-test25"]}

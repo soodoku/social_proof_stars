@@ -1,0 +1,1 @@
+{"last_update": "2023-07-13 07:42:22", "query": {"bytes_billed": 233832448, "bytes_processed": 233151369, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-12", "--end-date", "2023-07-13", "gpt-bot"]}

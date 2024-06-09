@@ -1,0 +1,1 @@
+{"last_update": "2023-07-04 17:42:46", "query": {"bytes_billed": 16777216, "bytes_processed": 16170013, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 3}], "args": ["pypinfo", "-j", "--start-date", "2023-07-04", "--end-date", "2023-07-05", "vidimera"]}

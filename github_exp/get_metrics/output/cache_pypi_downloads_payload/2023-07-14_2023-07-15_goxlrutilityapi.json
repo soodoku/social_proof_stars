@@ -1,0 +1,1 @@
+{"last_update": "2023-07-15 02:26:57", "query": {"bytes_billed": 98566144, "bytes_processed": 98269848, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-07-14", "--end-date", "2023-07-15", "goxlrutilityapi"]}

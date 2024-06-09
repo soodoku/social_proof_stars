@@ -1,0 +1,1 @@
+{"last_update": "2023-06-12 07:16:49", "query": {"bytes_billed": 121634816, "bytes_processed": 121540304, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-11", "--end-date", "2023-06-12", "torch-train-loop"]}

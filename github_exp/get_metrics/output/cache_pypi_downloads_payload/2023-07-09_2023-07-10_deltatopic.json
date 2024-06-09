@@ -1,0 +1,1 @@
+{"last_update": "2023-07-10 02:40:44", "query": {"bytes_billed": 97517568, "bytes_processed": 96626938, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-09", "--end-date", "2023-07-10", "deltatopic"]}

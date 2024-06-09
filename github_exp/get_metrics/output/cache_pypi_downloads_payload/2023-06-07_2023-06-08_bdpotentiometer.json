@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 13:34:11", "query": {"bytes_billed": 119537664, "bytes_processed": 118993466, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 5}], "args": ["pypinfo", "-j", "--start-date", "2023-06-07", "--end-date", "2023-06-08", "bdpotentiometer"]}

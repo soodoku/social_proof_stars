@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:57:04", "query": {"bytes_billed": 99614720, "bytes_processed": 98978445, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 8}], "args": ["pypinfo", "-j", "--start-date", "2023-06-07", "--end-date", "2023-06-08", "flet-multi-page"]}

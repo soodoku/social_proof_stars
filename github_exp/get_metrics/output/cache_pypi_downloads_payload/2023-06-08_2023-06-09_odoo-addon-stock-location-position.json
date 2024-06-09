@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 10:38:59", "query": {"bytes_billed": 249561088, "bytes_processed": 248611117, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 12}], "args": ["pypinfo", "-j", "--start-date", "2023-06-08", "--end-date", "2023-06-09", "odoo-addon-stock-location-position"]}

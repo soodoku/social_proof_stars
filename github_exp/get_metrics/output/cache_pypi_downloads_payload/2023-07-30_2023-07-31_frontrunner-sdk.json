@@ -1,0 +1,1 @@
+{"last_update": "2023-07-31 08:14:21", "query": {"bytes_billed": 142606336, "bytes_processed": 142220780, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-30", "--end-date", "2023-07-31", "frontrunner-sdk"]}

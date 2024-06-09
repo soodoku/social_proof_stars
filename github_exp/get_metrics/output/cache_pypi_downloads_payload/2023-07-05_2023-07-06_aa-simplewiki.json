@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 05:16:26", "query": {"bytes_billed": 25165824, "bytes_processed": 24391717, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-07-05", "--end-date", "2023-07-06", "aa-simplewiki"]}

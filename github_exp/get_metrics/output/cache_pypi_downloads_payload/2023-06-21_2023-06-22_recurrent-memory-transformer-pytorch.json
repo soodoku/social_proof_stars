@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 06:21:14", "query": {"bytes_billed": 15728640, "bytes_processed": 15560508, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-06-21", "--end-date", "2023-06-22", "recurrent-memory-transformer-pytorch"]}

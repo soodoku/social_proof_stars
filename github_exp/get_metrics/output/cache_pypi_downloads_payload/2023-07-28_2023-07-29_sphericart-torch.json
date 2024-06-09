@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 01:47:01", "query": {"bytes_billed": 49283072, "bytes_processed": 48771284, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-07-28", "--end-date", "2023-07-29", "sphericart-torch"]}

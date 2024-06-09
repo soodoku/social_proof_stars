@@ -1,0 +1,1 @@
+{"last_update": "2023-07-09 06:04:51", "query": {"bytes_billed": 248512512, "bytes_processed": 247823971, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-08", "--end-date", "2023-07-09", "winavsos"]}

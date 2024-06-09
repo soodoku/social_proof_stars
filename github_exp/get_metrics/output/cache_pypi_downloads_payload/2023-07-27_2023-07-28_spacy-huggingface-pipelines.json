@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 03:24:25", "query": {"bytes_billed": 149946368, "bytes_processed": 149123532, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 6}], "args": ["pypinfo", "-j", "--start-date", "2023-07-27", "--end-date", "2023-07-28", "spacy-huggingface-pipelines"]}

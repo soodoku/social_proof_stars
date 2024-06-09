@@ -1,0 +1,1 @@
+{"last_update": "2023-07-08 01:51:59", "query": {"bytes_billed": 50331648, "bytes_processed": 49432117, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-03", "--end-date", "2023-07-04", "latest-earth-quake-indonesia-chatur"]}

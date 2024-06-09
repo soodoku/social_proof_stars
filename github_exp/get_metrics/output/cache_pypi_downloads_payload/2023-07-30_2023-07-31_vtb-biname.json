@@ -1,0 +1,1 @@
+{"last_update": "2023-07-31 09:01:32", "query": {"bytes_billed": 189792256, "bytes_processed": 189433277, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-30", "--end-date", "2023-07-31", "vtb-biname"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-07-30 03:52:00", "query": {"bytes_billed": 199229440, "bytes_processed": 199011041, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-07-29", "--end-date", "2023-07-30", "sdc-sdk"]}

@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:48:57", "query": {"bytes_billed": 28311552, "bytes_processed": 27719109, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-04", "--end-date", "2023-06-05", "git-notion-pretty"]}

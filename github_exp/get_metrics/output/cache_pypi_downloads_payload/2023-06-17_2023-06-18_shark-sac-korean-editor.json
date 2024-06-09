@@ -1,0 +1,1 @@
+{"last_update": "2023-06-23 04:56:19", "query": {"bytes_billed": 31457280, "bytes_processed": 31312065, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 291}], "args": ["pypinfo", "-j", "--start-date", "2023-06-17", "--end-date", "2023-06-18", "shark-sac-korean-editor"]}

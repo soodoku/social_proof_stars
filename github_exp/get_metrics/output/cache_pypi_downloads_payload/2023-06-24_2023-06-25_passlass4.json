@@ -1,0 +1,1 @@
+{"last_update": "2023-06-25 05:17:30", "query": {"bytes_billed": 179306496, "bytes_processed": 179128785, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-24", "--end-date", "2023-06-25", "passlass4"]}

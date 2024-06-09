@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 11:33:12", "query": {"bytes_billed": 62914560, "bytes_processed": 62764863, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 6}], "args": ["pypinfo", "-j", "--start-date", "2023-06-01", "--end-date", "2023-06-02", "dendromatics"]}

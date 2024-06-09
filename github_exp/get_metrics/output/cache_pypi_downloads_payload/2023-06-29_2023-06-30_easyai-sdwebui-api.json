@@ -1,0 +1,1 @@
+{"last_update": "2023-07-02 03:40:51", "query": {"bytes_billed": 46137344, "bytes_processed": 46099460, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 19}], "args": ["pypinfo", "-j", "--start-date", "2023-06-29", "--end-date", "2023-06-30", "easyai-sdwebui-api"]}

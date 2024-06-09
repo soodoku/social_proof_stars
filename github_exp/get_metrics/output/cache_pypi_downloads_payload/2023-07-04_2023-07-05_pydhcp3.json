@@ -1,0 +1,1 @@
+{"last_update": "2023-07-05 02:12:04", "query": {"bytes_billed": 88080384, "bytes_processed": 87719189, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-04", "--end-date", "2023-07-05", "pydhcp3"]}

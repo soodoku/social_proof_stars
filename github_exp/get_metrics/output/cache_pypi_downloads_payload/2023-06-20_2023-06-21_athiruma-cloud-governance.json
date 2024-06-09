@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 06:51:52", "query": {"bytes_billed": 54525952, "bytes_processed": 53601224, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-06-20", "--end-date", "2023-06-21", "athiruma-cloud-governance"]}

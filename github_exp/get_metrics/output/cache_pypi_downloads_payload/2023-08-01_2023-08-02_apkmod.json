@@ -1,0 +1,1 @@
+{"last_update": "2023-08-02 01:18:46", "query": {"bytes_billed": 73400320, "bytes_processed": 73089680, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-01", "--end-date", "2023-08-02", "apkmod"]}

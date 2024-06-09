@@ -1,0 +1,1 @@
+{"last_update": "2023-07-23 05:29:55", "query": {"bytes_billed": 118489088, "bytes_processed": 118280104, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-22", "--end-date", "2023-07-23", "odoo-addon-product-category-company"]}

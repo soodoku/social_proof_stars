@@ -1,0 +1,1 @@
+{"last_update": "2023-07-24 02:14:19", "query": {"bytes_billed": 140509184, "bytes_processed": 140349892, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-07-23", "--end-date", "2023-07-24", "aiotaika"]}

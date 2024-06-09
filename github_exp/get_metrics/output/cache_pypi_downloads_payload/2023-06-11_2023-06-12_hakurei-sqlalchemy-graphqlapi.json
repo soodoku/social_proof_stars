@@ -1,0 +1,1 @@
+{"last_update": "2023-06-12 06:56:30", "query": {"bytes_billed": 150994944, "bytes_processed": 150071594, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-11", "--end-date", "2023-06-12", "hakurei-sqlalchemy-graphqlapi"]}

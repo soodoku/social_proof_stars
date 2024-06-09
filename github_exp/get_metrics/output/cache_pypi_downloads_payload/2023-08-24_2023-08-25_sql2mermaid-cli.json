@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 13:05:46", "query": {"bytes_billed": 75497472, "bytes_processed": 75459770, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-24", "--end-date", "2023-08-25", "sql2mermaid-cli"]}

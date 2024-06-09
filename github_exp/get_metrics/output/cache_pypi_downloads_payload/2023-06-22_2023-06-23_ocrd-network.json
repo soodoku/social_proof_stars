@@ -1,0 +1,1 @@
+{"last_update": "2023-06-23 02:03:30", "query": {"bytes_billed": 181403648, "bytes_processed": 181070836, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 48}], "args": ["pypinfo", "-j", "--start-date", "2023-06-22", "--end-date", "2023-06-23", "ocrd-network"]}

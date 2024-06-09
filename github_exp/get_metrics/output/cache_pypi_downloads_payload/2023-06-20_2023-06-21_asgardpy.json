@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 05:47:38", "query": {"bytes_billed": 50331648, "bytes_processed": 49608597, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 3}], "args": ["pypinfo", "-j", "--start-date", "2023-06-20", "--end-date", "2023-06-21", "asgardpy"]}

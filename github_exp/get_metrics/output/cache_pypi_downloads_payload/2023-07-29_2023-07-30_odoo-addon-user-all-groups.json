@@ -1,0 +1,1 @@
+{"last_update": "2023-07-30 03:59:45", "query": {"bytes_billed": 227540992, "bytes_processed": 227106366, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-29", "--end-date", "2023-07-30", "odoo-addon-user-all-groups"]}

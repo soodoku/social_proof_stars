@@ -1,0 +1,1 @@
+{"last_update": "2023-07-04 17:59:00", "query": {"bytes_billed": 78643200, "bytes_processed": 78165297, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-07-02", "--end-date", "2023-07-03", "aeropython"]}

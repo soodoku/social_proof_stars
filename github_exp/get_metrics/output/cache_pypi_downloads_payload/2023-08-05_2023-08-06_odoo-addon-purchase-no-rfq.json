@@ -1,0 +1,1 @@
+{"last_update": "2024-06-07 05:17:58", "query": {"bytes_billed": 97517568, "bytes_processed": 96529063, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-08-05", "--end-date", "2023-08-06", "odoo-addon-purchase-no-rfq"]}

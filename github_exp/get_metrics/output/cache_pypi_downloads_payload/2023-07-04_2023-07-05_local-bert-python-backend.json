@@ -1,0 +1,1 @@
+{"last_update": "2023-07-05 13:01:13", "query": {"bytes_billed": 98566144, "bytes_processed": 97740113, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-04", "--end-date", "2023-07-05", "local-bert-python-backend"]}

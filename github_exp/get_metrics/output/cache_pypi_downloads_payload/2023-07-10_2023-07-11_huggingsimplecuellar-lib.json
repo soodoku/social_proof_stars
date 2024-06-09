@@ -1,0 +1,1 @@
+{"last_update": "2023-07-11 04:10:20", "query": {"bytes_billed": 97517568, "bytes_processed": 97109583, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-10", "--end-date", "2023-07-11", "huggingsimplecuellar-lib"]}

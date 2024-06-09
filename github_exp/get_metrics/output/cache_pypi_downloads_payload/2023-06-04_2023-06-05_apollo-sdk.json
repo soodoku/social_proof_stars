@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 10:53:05", "query": {"bytes_billed": 38797312, "bytes_processed": 38292464, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 60}], "args": ["pypinfo", "-j", "--start-date", "2023-06-04", "--end-date", "2023-06-05", "apollo-sdk"]}

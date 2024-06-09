@@ -1,0 +1,1 @@
+{"last_update": "2023-07-13 07:07:11", "query": {"bytes_billed": 59768832, "bytes_processed": 58943070, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 9}], "args": ["pypinfo", "-j", "--start-date", "2023-07-11", "--end-date", "2023-07-12", "toml-tools"]}

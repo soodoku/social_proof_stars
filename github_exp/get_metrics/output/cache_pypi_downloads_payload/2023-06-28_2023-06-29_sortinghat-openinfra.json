@@ -1,0 +1,1 @@
+{"last_update": "2023-06-30 03:07:58", "query": {"bytes_billed": 115343360, "bytes_processed": 115291793, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 14}], "args": ["pypinfo", "-j", "--start-date", "2023-06-28", "--end-date", "2023-06-29", "sortinghat-openinfra"]}

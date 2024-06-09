@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 06:45:07", "query": {"bytes_billed": 57671680, "bytes_processed": 56914391, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-06-14", "--end-date", "2023-06-15", "krbjack"]}

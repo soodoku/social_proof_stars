@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 10:14:42", "query": {"bytes_billed": 88080384, "bytes_processed": 87816368, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-08-16", "--end-date", "2023-08-17", "pynukibt"]}

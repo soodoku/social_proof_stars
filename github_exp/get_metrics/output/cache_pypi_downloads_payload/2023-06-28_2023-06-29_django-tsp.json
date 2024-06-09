@@ -1,0 +1,1 @@
+{"last_update": "2023-07-02 03:43:07", "query": {"bytes_billed": 83886080, "bytes_processed": 82964518, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-28", "--end-date", "2023-06-29", "django-tsp"]}

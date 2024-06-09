@@ -1,0 +1,1 @@
+{"last_update": "2024-05-25 06:42:59", "query": {"bytes_billed": 98566144, "bytes_processed": 97894998, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-18", "--end-date", "2023-08-19", "movemapp-client"]}

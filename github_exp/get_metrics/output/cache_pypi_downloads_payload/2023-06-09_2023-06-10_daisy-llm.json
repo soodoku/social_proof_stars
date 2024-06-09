@@ -1,0 +1,1 @@
+{"last_update": "2023-06-10 02:19:55", "query": {"bytes_billed": 59768832, "bytes_processed": 58890111, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-09", "--end-date", "2023-06-10", "daisy-llm"]}

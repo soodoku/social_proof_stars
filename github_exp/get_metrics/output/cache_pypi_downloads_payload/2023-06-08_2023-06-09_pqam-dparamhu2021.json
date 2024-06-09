@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 12:59:03", "query": {"bytes_billed": 147849216, "bytes_processed": 147190741, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 11}], "args": ["pypinfo", "-j", "--start-date", "2023-06-08", "--end-date", "2023-06-09", "pqam-dparamhu2021"]}

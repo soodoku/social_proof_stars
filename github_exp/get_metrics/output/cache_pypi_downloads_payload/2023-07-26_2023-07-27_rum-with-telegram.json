@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 01:30:14", "query": {"bytes_billed": 78643200, "bytes_processed": 77810715, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-26", "--end-date", "2023-07-27", "rum-with-telegram"]}

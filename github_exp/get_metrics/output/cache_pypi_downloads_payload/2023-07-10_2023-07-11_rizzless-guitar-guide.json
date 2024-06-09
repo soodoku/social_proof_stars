@@ -1,0 +1,1 @@
+{"last_update": "2023-07-11 03:50:29", "query": {"bytes_billed": 132120576, "bytes_processed": 131654964, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-10", "--end-date", "2023-07-11", "rizzless-guitar-guide"]}

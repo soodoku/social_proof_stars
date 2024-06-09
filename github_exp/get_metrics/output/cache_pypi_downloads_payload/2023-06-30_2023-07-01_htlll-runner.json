@@ -1,0 +1,1 @@
+{"last_update": "2023-07-06 02:14:05", "query": {"bytes_billed": 40894464, "bytes_processed": 40418942, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-30", "--end-date", "2023-07-01", "htlll-runner"]}

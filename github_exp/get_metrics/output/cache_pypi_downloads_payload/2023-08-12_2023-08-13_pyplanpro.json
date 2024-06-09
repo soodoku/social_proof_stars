@@ -1,0 +1,1 @@
+{"last_update": "2024-06-04 15:36:33", "query": {"bytes_billed": 71303168, "bytes_processed": 71232686, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-08-12", "--end-date", "2023-08-13", "pyplanpro"]}

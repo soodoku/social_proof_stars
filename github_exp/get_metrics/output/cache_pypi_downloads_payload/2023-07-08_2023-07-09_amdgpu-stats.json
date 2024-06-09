@@ -1,0 +1,1 @@
+{"last_update": "2023-07-09 06:01:05", "query": {"bytes_billed": 164626432, "bytes_processed": 164021968, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-08", "--end-date", "2023-07-09", "amdgpu-stats"]}

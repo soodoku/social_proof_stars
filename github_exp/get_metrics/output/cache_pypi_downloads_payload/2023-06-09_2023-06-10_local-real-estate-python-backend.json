@@ -1,0 +1,1 @@
+{"last_update": "2023-06-10 02:15:58", "query": {"bytes_billed": 56623104, "bytes_processed": 56457082, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-09", "--end-date", "2023-06-10", "local-real-estate-python-backend"]}

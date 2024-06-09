@@ -1,0 +1,1 @@
+{"last_update": "2023-07-23 06:48:21", "query": {"bytes_billed": 66060288, "bytes_processed": 65369182, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-07-16", "--end-date", "2023-07-17", "ccache-download-redis"]}

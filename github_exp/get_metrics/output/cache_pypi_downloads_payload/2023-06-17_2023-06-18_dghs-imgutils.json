@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 06:42:23", "query": {"bytes_billed": 49283072, "bytes_processed": 49049975, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 103}], "args": ["pypinfo", "-j", "--start-date", "2023-06-17", "--end-date", "2023-06-18", "dghs-imgutils"]}

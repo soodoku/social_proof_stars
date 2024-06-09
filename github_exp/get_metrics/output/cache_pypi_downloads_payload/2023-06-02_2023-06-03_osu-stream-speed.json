@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 13:32:19", "query": {"bytes_billed": 60817408, "bytes_processed": 60540951, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-02", "--end-date", "2023-06-03", "osu-stream-speed"]}

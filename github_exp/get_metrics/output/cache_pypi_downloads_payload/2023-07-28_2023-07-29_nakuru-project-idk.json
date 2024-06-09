@@ -1,0 +1,1 @@
+{"last_update": "2023-07-29 01:25:25", "query": {"bytes_billed": 103809024, "bytes_processed": 102782216, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 4}], "args": ["pypinfo", "-j", "--start-date", "2023-07-28", "--end-date", "2023-07-29", "nakuru-project-idk"]}

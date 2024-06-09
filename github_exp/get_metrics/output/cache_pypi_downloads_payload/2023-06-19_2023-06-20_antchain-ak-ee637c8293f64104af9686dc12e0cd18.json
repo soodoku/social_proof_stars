@@ -1,0 +1,1 @@
+{"last_update": "2023-06-24 07:10:12", "query": {"bytes_billed": 67108864, "bytes_processed": 66442094, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-06-19", "--end-date", "2023-06-20", "antchain-ak-ee637c8293f64104af9686dc12e0cd18"]}

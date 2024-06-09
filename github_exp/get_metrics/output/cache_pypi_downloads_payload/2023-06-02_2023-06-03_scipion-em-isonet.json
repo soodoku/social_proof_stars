@@ -1,0 +1,1 @@
+{"last_update": "2023-06-09 12:15:31", "query": {"bytes_billed": 67108864, "bytes_processed": 66331792, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-06-02", "--end-date", "2023-06-03", "scipion-em-isonet"]}

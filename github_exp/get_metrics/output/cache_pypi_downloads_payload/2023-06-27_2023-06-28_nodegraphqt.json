@@ -1,0 +1,1 @@
+{"last_update": "2023-07-02 03:37:49", "query": {"bytes_billed": 72351744, "bytes_processed": 71570978, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 46}], "args": ["pypinfo", "-j", "--start-date", "2023-06-27", "--end-date", "2023-06-28", "nodegraphqt"]}
