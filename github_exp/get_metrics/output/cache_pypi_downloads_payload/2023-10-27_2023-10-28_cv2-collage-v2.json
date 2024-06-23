@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 06:27:42", "query": {"bytes_billed": 76546048, "bytes_processed": 76271559, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 9}], "args": ["pypinfo", "-j", "--start-date", "2023-10-27", "--end-date", "2023-10-28", "cv2-collage-v2"]}

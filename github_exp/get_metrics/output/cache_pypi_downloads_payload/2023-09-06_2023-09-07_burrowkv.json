@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 05:37:24", "query": {"bytes_billed": 81788928, "bytes_processed": 81028024, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-09-06", "--end-date", "2023-09-07", "burrowkv"]}

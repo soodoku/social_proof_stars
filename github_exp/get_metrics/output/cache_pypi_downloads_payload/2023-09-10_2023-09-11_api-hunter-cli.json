@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 07:29:32", "query": {"bytes_billed": 73400320, "bytes_processed": 73319991, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-10", "--end-date", "2023-09-11", "api-hunter-cli"]}

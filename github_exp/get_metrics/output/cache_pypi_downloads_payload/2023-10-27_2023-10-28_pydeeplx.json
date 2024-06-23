@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 02:10:20", "query": {"bytes_billed": 103809024, "bytes_processed": 102845294, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 26}], "args": ["pypinfo", "-j", "--start-date", "2023-10-27", "--end-date", "2023-10-28", "pydeeplx"]}

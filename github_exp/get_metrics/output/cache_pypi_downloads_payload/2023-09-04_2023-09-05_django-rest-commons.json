@@ -1,0 +1,1 @@
+{"last_update": "2024-06-15 03:29:03", "query": {"bytes_billed": 65011712, "bytes_processed": 64903702, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-09-04", "--end-date", "2023-09-05", "django-rest-commons"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-19 02:08:37", "query": {"bytes_billed": 56623104, "bytes_processed": 56290293, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 6}], "args": ["pypinfo", "-j", "--start-date", "2023-10-02", "--end-date", "2023-10-03", "datatable-faker"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-15 07:30:25", "query": {"bytes_billed": 76546048, "bytes_processed": 75929636, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-27", "--end-date", "2023-10-28", "rclone-decrypt"]}

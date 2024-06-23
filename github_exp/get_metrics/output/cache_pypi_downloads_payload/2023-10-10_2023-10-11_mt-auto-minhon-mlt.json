@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 05:07:21", "query": {"bytes_billed": 39845888, "bytes_processed": 39325847, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-10", "--end-date", "2023-10-11", "mt-auto-minhon-mlt"]}

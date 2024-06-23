@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 06:01:52", "query": {"bytes_billed": 56623104, "bytes_processed": 55583925, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 31}], "args": ["pypinfo", "-j", "--start-date", "2023-09-05", "--end-date", "2023-09-06", "locust-grasshopper"]}

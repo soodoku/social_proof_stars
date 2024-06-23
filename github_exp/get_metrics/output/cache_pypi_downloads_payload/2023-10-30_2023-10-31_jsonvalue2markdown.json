@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 10:15:11", "query": {"bytes_billed": 196083712, "bytes_processed": 195126457, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-30", "--end-date", "2023-10-31", "jsonvalue2markdown"]}

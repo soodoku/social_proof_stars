@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 03:48:27", "query": {"bytes_billed": 32505856, "bytes_processed": 32242246, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-02", "--end-date", "2023-09-03", "python-switchbot-ble"]}

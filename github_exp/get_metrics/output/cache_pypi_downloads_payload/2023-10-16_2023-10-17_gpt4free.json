@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 01:43:33", "query": {"bytes_billed": 213909504, "bytes_processed": 213614816, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 51}], "args": ["pypinfo", "-j", "--start-date", "2023-10-16", "--end-date", "2023-10-17", "gpt4free"]}

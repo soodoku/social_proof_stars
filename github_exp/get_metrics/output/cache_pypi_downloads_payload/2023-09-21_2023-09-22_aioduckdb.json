@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 05:13:23", "query": {"bytes_billed": 177209344, "bytes_processed": 176325742, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-09-21", "--end-date", "2023-09-22", "aioduckdb"]}

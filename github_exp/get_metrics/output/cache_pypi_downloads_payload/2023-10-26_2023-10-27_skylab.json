@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 07:45:26", "query": {"bytes_billed": 81788928, "bytes_processed": 81285317, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 3}], "args": ["pypinfo", "-j", "--start-date", "2023-10-26", "--end-date", "2023-10-27", "skylab"]}

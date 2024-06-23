@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 06:10:05", "query": {"bytes_billed": 29360128, "bytes_processed": 28503432, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-22", "--end-date", "2023-10-23", "quri-parts-quantinuum"]}

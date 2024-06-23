@@ -1,0 +1,1 @@
+{"last_update": "2024-06-15 06:29:35", "query": {"bytes_billed": 49283072, "bytes_processed": 48309033, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-04", "--end-date", "2023-10-05", "easy-hmac"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 08:41:11", "query": {"bytes_billed": 28311552, "bytes_processed": 28199285, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-24", "--end-date", "2023-09-25", "jupyter-pgweb-proxy"]}

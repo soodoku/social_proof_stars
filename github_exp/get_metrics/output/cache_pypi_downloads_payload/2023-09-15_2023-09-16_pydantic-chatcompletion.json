@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 03:14:51", "query": {"bytes_billed": 173015040, "bytes_processed": 172810562, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 11}], "args": ["pypinfo", "-j", "--start-date", "2023-09-15", "--end-date", "2023-09-16", "pydantic-chatcompletion"]}

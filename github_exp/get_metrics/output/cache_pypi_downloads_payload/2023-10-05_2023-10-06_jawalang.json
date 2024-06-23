@@ -1,0 +1,1 @@
+{"last_update": "2024-05-25 04:55:01", "query": {"bytes_billed": 47185920, "bytes_processed": 46568515, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-10-05", "--end-date", "2023-10-06", "jawalang"]}

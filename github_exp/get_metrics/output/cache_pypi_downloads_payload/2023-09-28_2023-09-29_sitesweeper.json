@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 03:09:43", "query": {"bytes_billed": 35651584, "bytes_processed": 34684216, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-28", "--end-date", "2023-09-29", "sitesweeper"]}

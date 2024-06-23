@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 11:49:31", "query": {"bytes_billed": 55574528, "bytes_processed": 55258418, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 14}], "args": ["pypinfo", "-j", "--start-date", "2023-10-17", "--end-date", "2023-10-18", "dfm-tools"]}

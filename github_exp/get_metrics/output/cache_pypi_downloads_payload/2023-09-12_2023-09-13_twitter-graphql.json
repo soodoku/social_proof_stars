@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 01:38:40", "query": {"bytes_billed": 30408704, "bytes_processed": 30325529, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-12", "--end-date", "2023-09-13", "twitter-graphql"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 07:36:36", "query": {"bytes_billed": 40894464, "bytes_processed": 40408641, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-10-10", "--end-date", "2023-10-11", "lidar-visualizer"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 02:42:09", "query": {"bytes_billed": 47185920, "bytes_processed": 46343350, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 51}], "args": ["pypinfo", "-j", "--start-date", "2023-10-08", "--end-date", "2023-10-09", "mypy-boto3-osis"]}

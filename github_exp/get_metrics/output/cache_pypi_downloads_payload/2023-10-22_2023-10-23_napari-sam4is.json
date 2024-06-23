@@ -1,0 +1,1 @@
+{"last_update": "2024-05-25 05:55:56", "query": {"bytes_billed": 48234496, "bytes_processed": 47589522, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-22", "--end-date", "2023-10-23", "napari-sam4is"]}

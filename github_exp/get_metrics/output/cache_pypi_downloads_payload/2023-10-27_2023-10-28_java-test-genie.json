@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 07:59:10", "query": {"bytes_billed": 117440512, "bytes_processed": 116625975, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-27", "--end-date", "2023-10-28", "java-test-genie"]}

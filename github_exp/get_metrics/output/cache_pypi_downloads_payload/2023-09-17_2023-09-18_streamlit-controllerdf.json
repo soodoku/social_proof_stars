@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 08:29:09", "query": {"bytes_billed": 40894464, "bytes_processed": 40856386, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-09-17", "--end-date", "2023-09-18", "streamlit-controllerdf"]}

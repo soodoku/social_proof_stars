@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 11:36:04", "query": {"bytes_billed": 76546048, "bytes_processed": 76354144, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 11}], "args": ["pypinfo", "-j", "--start-date", "2023-10-31", "--end-date", "2023-11-01", "odoo14-addon-product-fao-fishing"]}

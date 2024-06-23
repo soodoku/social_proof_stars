@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 11:42:22", "query": {"bytes_billed": 145752064, "bytes_processed": 145682051, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-09-20", "--end-date", "2023-09-21", "polars-streaming"]}

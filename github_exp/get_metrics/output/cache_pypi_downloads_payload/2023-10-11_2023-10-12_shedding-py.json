@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 11:13:11", "query": {"bytes_billed": 22020096, "bytes_processed": 21991596, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-10-11", "--end-date", "2023-10-12", "shedding-py"]}

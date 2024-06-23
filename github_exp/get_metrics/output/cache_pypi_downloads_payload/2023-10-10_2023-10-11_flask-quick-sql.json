@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 03:44:16", "query": {"bytes_billed": 39845888, "bytes_processed": 39716303, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-10", "--end-date", "2023-10-11", "flask-quick-sql"]}

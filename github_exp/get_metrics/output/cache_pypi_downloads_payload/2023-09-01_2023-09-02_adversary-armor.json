@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 07:59:16", "query": {"bytes_billed": 35651584, "bytes_processed": 35339510, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-09-01", "--end-date", "2023-09-02", "adversary-armor"]}

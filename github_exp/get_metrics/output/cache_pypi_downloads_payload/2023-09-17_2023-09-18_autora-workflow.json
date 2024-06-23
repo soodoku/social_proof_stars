@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 03:45:01", "query": {"bytes_billed": 39845888, "bytes_processed": 39013272, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-09-17", "--end-date", "2023-09-18", "autora-workflow"]}

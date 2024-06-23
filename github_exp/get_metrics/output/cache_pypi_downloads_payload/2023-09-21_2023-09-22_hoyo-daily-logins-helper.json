@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 03:47:57", "query": {"bytes_billed": 58720256, "bytes_processed": 58557283, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 24}], "args": ["pypinfo", "-j", "--start-date", "2023-09-21", "--end-date", "2023-09-22", "hoyo-daily-logins-helper"]}

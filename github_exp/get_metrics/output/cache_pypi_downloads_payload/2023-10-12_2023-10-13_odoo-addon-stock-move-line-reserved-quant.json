@@ -1,0 +1,1 @@
+{"last_update": "2024-06-15 06:26:45", "query": {"bytes_billed": 115343360, "bytes_processed": 114797741, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 150}], "args": ["pypinfo", "-j", "--start-date", "2023-10-12", "--end-date", "2023-10-13", "odoo-addon-stock-move-line-reserved-quant"]}

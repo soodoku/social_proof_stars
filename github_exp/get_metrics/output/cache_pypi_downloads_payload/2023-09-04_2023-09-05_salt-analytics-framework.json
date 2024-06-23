@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 06:28:20", "query": {"bytes_billed": 83886080, "bytes_processed": 83231010, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1976}], "args": ["pypinfo", "-j", "--start-date", "2023-09-04", "--end-date", "2023-09-05", "salt-analytics-framework"]}

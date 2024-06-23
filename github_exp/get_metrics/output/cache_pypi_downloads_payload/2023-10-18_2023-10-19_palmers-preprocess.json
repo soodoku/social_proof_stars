@@ -1,0 +1,1 @@
+{"last_update": "2024-06-15 07:03:05", "query": {"bytes_billed": 272629760, "bytes_processed": 271688912, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-18", "--end-date", "2023-10-19", "palmers-preprocess"]}

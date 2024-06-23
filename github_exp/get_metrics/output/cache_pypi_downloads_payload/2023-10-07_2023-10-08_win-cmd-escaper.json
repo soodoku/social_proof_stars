@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 11:36:10", "query": {"bytes_billed": 265289728, "bytes_processed": 264843937, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-10-07", "--end-date", "2023-10-08", "win-cmd-escaper"]}

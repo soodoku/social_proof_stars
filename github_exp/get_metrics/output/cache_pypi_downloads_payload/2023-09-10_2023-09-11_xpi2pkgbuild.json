@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 11:37:59", "query": {"bytes_billed": 67108864, "bytes_processed": 66459549, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-10", "--end-date", "2023-09-11", "xpi2pkgbuild"]}

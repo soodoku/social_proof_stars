@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 07:58:12", "query": {"bytes_billed": 33554432, "bytes_processed": 32567980, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 68}], "args": ["pypinfo", "-j", "--start-date", "2023-10-10", "--end-date", "2023-10-11", "crossmark-jotform-api"]}

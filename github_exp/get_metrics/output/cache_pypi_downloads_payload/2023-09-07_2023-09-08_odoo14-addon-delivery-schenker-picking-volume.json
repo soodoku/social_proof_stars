@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 03:51:26", "query": {"bytes_billed": 144703488, "bytes_processed": 143726923, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-07", "--end-date", "2023-09-08", "odoo14-addon-delivery-schenker-picking-volume"]}

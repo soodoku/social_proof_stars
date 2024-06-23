@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 08:21:14", "query": {"bytes_billed": 49283072, "bytes_processed": 49200136, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-10-01", "--end-date", "2023-10-02", "badgescale-ys-plt"]}

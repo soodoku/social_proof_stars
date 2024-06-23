@@ -1,0 +1,1 @@
+{"last_update": "2024-06-21 12:46:36", "query": {"bytes_billed": 70254592, "bytes_processed": 69691894, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 20}], "args": ["pypinfo", "-j", "--start-date", "2023-10-16", "--end-date", "2023-10-17", "aws-clipper"]}

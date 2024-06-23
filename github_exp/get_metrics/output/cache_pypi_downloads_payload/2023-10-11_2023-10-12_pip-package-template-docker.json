@@ -1,0 +1,1 @@
+{"last_update": "2024-06-19 01:50:28", "query": {"bytes_billed": 247463936, "bytes_processed": 247095188, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-11", "--end-date", "2023-10-12", "pip-package-template-docker"]}

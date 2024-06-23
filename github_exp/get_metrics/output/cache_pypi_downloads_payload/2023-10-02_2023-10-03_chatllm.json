@@ -1,0 +1,1 @@
+{"last_update": "2024-06-19 02:45:52", "query": {"bytes_billed": 766509056, "bytes_processed": 766230110, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 9}], "args": ["pypinfo", "-j", "--start-date", "2023-10-02", "--end-date", "2023-10-03", "chatllm"]}

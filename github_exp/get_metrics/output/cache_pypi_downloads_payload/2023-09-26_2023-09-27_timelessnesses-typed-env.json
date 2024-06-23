@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 04:17:44", "query": {"bytes_billed": 41943040, "bytes_processed": 41718099, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-26", "--end-date", "2023-09-27", "timelessnesses-typed-env"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 11:25:50", "query": {"bytes_billed": 75497472, "bytes_processed": 75325940, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-31", "--end-date", "2023-11-01", "odoo-addon-purchase-report-shipping-address"]}

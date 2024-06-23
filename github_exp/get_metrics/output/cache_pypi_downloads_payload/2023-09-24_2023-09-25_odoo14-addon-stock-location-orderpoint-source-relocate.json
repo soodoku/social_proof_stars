@@ -1,0 +1,1 @@
+{"last_update": "2024-06-10 11:17:30", "query": {"bytes_billed": 103809024, "bytes_processed": 102787424, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 2}], "args": ["pypinfo", "-j", "--start-date", "2023-09-24", "--end-date", "2023-09-25", "odoo14-addon-stock-location-orderpoint-source-relocate"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 05:17:04", "query": {"bytes_billed": 51380224, "bytes_processed": 51046226, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-10-20", "--end-date", "2023-10-21", "django-sphinx-hosting"]}

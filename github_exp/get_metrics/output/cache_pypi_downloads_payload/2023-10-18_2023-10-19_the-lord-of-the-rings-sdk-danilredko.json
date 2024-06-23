@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 01:40:38", "query": {"bytes_billed": 38797312, "bytes_processed": 38080234, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-18", "--end-date", "2023-10-19", "the-lord-of-the-rings-sdk-danilredko"]}

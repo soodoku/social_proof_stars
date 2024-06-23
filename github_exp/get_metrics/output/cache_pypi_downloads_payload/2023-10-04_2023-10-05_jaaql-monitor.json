@@ -1,0 +1,1 @@
+{"last_update": "2024-06-15 07:10:59", "query": {"bytes_billed": 84934656, "bytes_processed": 84558257, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 32}], "args": ["pypinfo", "-j", "--start-date", "2023-10-04", "--end-date", "2023-10-05", "jaaql-monitor"]}

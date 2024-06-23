@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 07:52:26", "query": {"bytes_billed": 57671680, "bytes_processed": 57324529, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 11}], "args": ["pypinfo", "-j", "--start-date", "2023-09-08", "--end-date", "2023-09-09", "vectordb2"]}

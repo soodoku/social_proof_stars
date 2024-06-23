@@ -1,0 +1,1 @@
+{"last_update": "2024-06-14 07:18:25", "query": {"bytes_billed": 68157440, "bytes_processed": 67288524, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-09-24", "--end-date", "2023-09-25", "twarc2sql"]}

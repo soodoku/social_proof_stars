@@ -1,0 +1,1 @@
+{"last_update": "2024-06-22 06:22:57", "query": {"bytes_billed": 15728640, "bytes_processed": 14892044, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 0}], "args": ["pypinfo", "-j", "--start-date", "2023-10-25", "--end-date", "2023-10-26", "siq3d"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-19 02:41:47", "query": {"bytes_billed": 114294784, "bytes_processed": 113373526, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 1}], "args": ["pypinfo", "-j", "--start-date", "2023-10-09", "--end-date", "2023-10-10", "porkbun-ddns"]}

@@ -1,0 +1,1 @@
+{"last_update": "2024-06-09 06:33:22", "query": {"bytes_billed": 18874368, "bytes_processed": 18739219, "cached": false, "estimated_cost": "0.01"}, "rows": [{"download_count": 38}], "args": ["pypinfo", "-j", "--start-date", "2023-09-12", "--end-date", "2023-09-13", "telemulator3"]}
