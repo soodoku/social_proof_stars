@@ -8,15 +8,15 @@ rename file_project pkg_str
 encode pkg_str, gen(pkg)
 
 * Date when treatment happens
-local cutoff_date_str 2023-06-04
+local cutoff_date_str 2023-06-08
 gen cutoff_date= date("`cutoff_date_str'", "YMD")
 gen t = date - cutoff_date
 
 * End date of sample period
-local end_date = date("2023-07-19", "YMD")
-local delta_days_obs = `end_date' - date("`cutoff_date_str'", "YMD") + 1
+local end_date = date("2023-07-20", "YMD")
+local delta_days_obs = `end_date' - cutoff_date
 
-local post_snapshot_date 2023-06-18
+local post_snapshot_date 2023-06-22
 
 // // Remove 100 downloads 3 days after cutoff date
 // local cutoff_date_plus_3days = cutoff_date + 3
@@ -25,53 +25,12 @@ local post_snapshot_date 2023-06-18
 // // Drop treatment window
 // drop if (date >= cutoff_date) & (date < `cutoff_date_plus_3days')
 
-
-// qui levelsof pkg, local(npkg)
-// dis "`npkg'"
-// display `: word count of `npkg''
-// local npkg `: word count of `npkg''
-// dis "`npkg'"
-
-// qui levelsof pkg, local(npkg)
-// local npkg `: word count of `npkg''
-// aa
-
 eststo clear
+// =============================================================
+// Medians
+// =============================================================
 // Post-treat differences snapshot at `post_snapshot_date'
-eststo: reg tt_downloads i.treatment if date==date("`post_snapshot_date'", "YMD"), cluster(pkg)
-	* Add scalars
-	// Get mean of y -----------------------------------
-	sum `e(depvar)' if e(sample)
-	local ymean: display %9.0fc `r(mean)'
-	estadd local ymean "`ymean'"
-	// Get obs -----------------------------------------
-	local nobs: display %9.0fc `e(N)'
-	estadd local nobs "`nobs'"
-	// Get packages/N_clusters -------------------------
-	local n_pkg: display %9.0fc `e(N_clust)'
-	estadd local n_packages "`n_pkg'"
-	// Get days ----------------------------------------
-	estadd local n_days 1
-
-// Post-treat differences allowing for dynamics
-eststo: reg tt_downloads i.treatment##c.t if date>=cutoff_date, cluster(pkg)
-	* Add scalars
-	// Get mean of y -----------------------------------
-	sum `e(depvar)' if e(sample)
-	local ymean: display %9.0fc `r(mean)'
-	estadd local ymean "`ymean'"
-	// Get obs -----------------------------------------
-	local nobs: display %9.0fc `e(N)'
-	estadd local nobs "`nobs'"
-	// Get packages/N_clusters -------------------------
-	local n_pkg: display %9.0fc `e(N_clust)'
-	estadd local n_packages "`n_pkg'"
-	// Get days ----------------------------------------
-	estadd local n_days `delta_days_obs'
-
-// Post-treat differences snapshot at `post_snapshot_date'
-eststo: qreg2 tt_downloads i.treatment if date==date("`post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
-
+eststo: qreg tt_downloads i.treatment if date==date("`post_snapshot_date'", "YMD"), vce(r) quantile(.5)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -81,10 +40,7 @@ eststo: qreg2 tt_downloads i.treatment if date==date("`post_snapshot_date'", "YM
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui levelsof pkg, local(npkg)
-	local npkg `: word count of `npkg''
-	local npkg: display %9.0fc `npkg'
-	estadd local n_packages "`n_pkg'"
+	estadd local n_packages "23,916"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
@@ -99,12 +55,44 @@ eststo: qreg2 tt_downloads i.treatment##c.t if date>=cutoff_date, cluster(pkg) q
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui levelsof pkg, local(npkg)
-	local npkg `: word count of `npkg''
-	local npkg: display %9.0fc `npkg'
+	estadd local n_packages "23,916"
+	// Get days ----------------------------------------
+	estadd local n_days `delta_days_obs'
+
+// =============================================================
+// Means
+// =============================================================
+// Post-treat differences snapshot at `post_snapshot_date'
+eststo: reg tt_downloads i.treatment if date==date("`post_snapshot_date'", "YMD"), vce(hc3)
+	* Add scalars
+	// Get mean of y -----------------------------------
+	sum `e(depvar)' if e(sample)
+	local ymean: display %9.0fc `r(mean)'
+	estadd local ymean "`ymean'"
+	// Get obs -----------------------------------------
+	local nobs: display %9.0fc `e(N)'
+	estadd local nobs "`nobs'"
+	// Get packages/N_clusters -------------------------
+	estadd local n_packages "`nobs'"
+	// Get days ----------------------------------------
+	estadd local n_days 1
+
+// Post-treat differences allowing for dynamics
+eststo: reg tt_downloads i.treatment##c.t if date>cutoff_date, cluster(pkg)
+	* Add scalars
+	// Get mean of y -----------------------------------
+	sum `e(depvar)' if e(sample)
+	local ymean: display %9.0fc `r(mean)'
+	estadd local ymean "`ymean'"
+	// Get obs -----------------------------------------
+	local nobs: display %9.0fc `e(N)'
+	estadd local nobs "`nobs'"
+	// Get packages/N_clusters -------------------------
+	local n_pkg: display %9.0fc `e(N_clust)'
 	estadd local n_packages "`n_pkg'"
 	// Get days ----------------------------------------
 	estadd local n_days `delta_days_obs'
+
 
 
 local savepath using ../tabs/pypi_exp_regtable.tex
