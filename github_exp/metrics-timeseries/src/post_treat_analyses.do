@@ -9,7 +9,7 @@ gen date = date(date_str, "YMD")
 rename pkg pkg_str
 encode pkg_str, gen(pkg)
 
-local cutoff_date_str 2023-05-19
+local cutoff_date_str 2023-05-20
 gen cutoff_date= date("`cutoff_date_str'", "YMD")
 gen t = date - cutoff_date
 
@@ -21,9 +21,13 @@ local delta_days_obs = `end_date' - date("`cutoff_date_str'", "YMD") + 1
 gen pre_treat_period = (date < date("2023-05-12", "YMD"))
 bysort pkg: egen pre_treat_mean = mean(cond(pre_treat_period, tt_downloads, .))
 
+
+// =============================================================
+// Means
+// =============================================================
 eststo clear
 * --------------------------------------------------------------
-* Snapshot at 19 Jun (1 month relative to 19 May end of treatment period)
+* Snapshot at 20 Jun (1 month relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-06-2
 eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
 	* Add scalars
@@ -40,8 +44,8 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 19 July (2 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-07-19
+* Snapshot at 20 July (2 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-07-20
 eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
@@ -58,8 +62,8 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 
 
 * --------------------------------------------------------------
-* Snapshot at 19 August (3 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-08-19
+* Snapshot at 20 August (3 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-08-20
 eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
@@ -75,8 +79,8 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 19 September (4 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-09-19
+* Snapshot at 20 September (4 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-09-20
 eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
@@ -92,8 +96,8 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 19 October (5 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-10-19
+* Snapshot at 20 October (5 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-10-20
 eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
@@ -110,7 +114,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 
 * --------------------------------------------------------------
 * Post-treat differences allowing for dynamics
-eststo: reg tt_downloads i.treated2##c.t pre_treat_mean if date>=date("`cutoff_date_str'", "YMD"), cluster(pkg)
+eststo: reg tt_downloads i.treated2##c.t pre_treat_mean if date>=cutoff_date, cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -124,7 +128,7 @@ eststo: reg tt_downloads i.treated2##c.t pre_treat_mean if date>=date("`cutoff_d
 	// Get days ----------------------------------------
 	estadd local n_days `delta_days_obs'
 
-local savepath using ../output/github_exp_did_regtable.tex
+local savepath using ../output/github_exp_regtable.tex
 local fmt %9.1f
 #delimit;
 esttab `savepath',
@@ -177,11 +181,11 @@ esttab `savepath',
 
 // =============================================================
 // Medians
-
+// =============================================================
 eststo clear
 * --------------------------------------------------------------
-* Snapshot at 19 Jun (1 month relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-06-2
+* Snapshot at 20 Jun (1 month relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-06-20
 eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
@@ -198,8 +202,8 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 19 July (2 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-07-19
+* Snapshot at 20 July (2 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-07-20
 eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
@@ -217,8 +221,8 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 
 
 * --------------------------------------------------------------
-* Snapshot at 19 August (3 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-08-19
+* Snapshot at 20 August (3 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-08-20
 eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
@@ -235,8 +239,8 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 19 September (4 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-09-19
+* Snapshot at 20 September (4 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-09-20
 eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
@@ -253,8 +257,8 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 19 October (5 months relative to 19 May end of treatment period)
-local _post_snapshot_date 2023-09-19
+* Snapshot at 20 October (5 months relative to 20 May end of treatment period)
+local _post_snapshot_date 2023-09-20
 eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
@@ -273,7 +277,7 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 
 * --------------------------------------------------------------
 * Post-treat differences allowing for dynamics
-eststo: qreg2 tt_downloads i.treated2##c.t pre_treat_mean if date>=date("`cutoff_date_str'", "YMD"), cluster(pkg) quantile(.5)
+eststo: qreg2 tt_downloads i.treated2##c.t pre_treat_mean if date>=cutoff_date, cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -288,7 +292,7 @@ eststo: qreg2 tt_downloads i.treated2##c.t pre_treat_mean if date>=date("`cutoff
 	// Get days ----------------------------------------
 	estadd local n_days `delta_days_obs'
 
-local savepath using ../output/github_exp_did_medians_regtable.tex
+local savepath using ../output/github_exp_medians_regtable.tex
 local fmt %9.1f
 #delimit;
 esttab `savepath',
