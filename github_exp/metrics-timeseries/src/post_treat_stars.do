@@ -8,18 +8,54 @@ gen date = date(date_str, "YMD")
 rename fileslug pkg_str
 encode pkg_str, gen(pkg)
 
-local cutoff_date_str 2023-05-19
+* Defining end of treatment window
+local cutoff_date_str 2023-05-20
 gen cutoff_date= date("`cutoff_date_str'", "YMD")
 gen t = date - cutoff_date
 
-local end_date = date("2023-06-10", "YMD")
-local delta_days_obs = `end_date' - date("`cutoff_date_str'", "YMD") + 1
+local end_date = date("2023-06-07", "YMD")
+local delta_days_obs = `end_date' - cutoff_date
+dis `delta_days_obs'
 
-local post_snapshot_date 2023-06-02
+local post_snapshot_date date("2023-06-03", "YMD")
 
 eststo clear
+// -------------------------------------------------------------
+// Differences in medians
+eststo: qreg stars i.treated2 if date==`post_snapshot_date', vce(r) quantile(.5)
+	* Add scalars
+	// Get mean of y -----------------------------------
+	sum `e(depvar)' if e(sample)
+	local ymean: display %9.1fc `r(mean)'
+	estadd local ymean "`ymean'"
+	// Get obs -----------------------------------------
+	local nobs: display %9.0fc `e(N)'
+	estadd local nobs "`nobs'"
+	// Get packages/N_clusters -------------------------
+	estadd local n_packages "`nobs'"
+	// Get days ----------------------------------------
+	estadd local n_days 1
+
+// Post-treat differences allowing for dynamics
+eststo: qreg2 stars i.treated2##c.t if date>cutoff_date, cluster(pkg) quantile(.5)
+	* Add scalars
+	// Get mean of y -----------------------------------
+	sum `e(depvar)' if e(sample)
+	local ymean: display %9.1fc `r(mean)'
+	estadd local ymean "`ymean'"
+	// Get packages/N_clusters -------------------------
+	estadd local n_packages "`nobs'"
+	// Get obs -----------------------------------------
+	local nobs: display %9.0fc `e(N)'
+	estadd local nobs "`nobs'"
+	// Get days ----------------------------------------
+	estadd local n_days `delta_days_obs'
+
+
+// -------------------------------------------------------------
+// Differences in means
 // Post-treat differences snapshot at `post_snapshot_date'
-eststo: reg stars i.treated2 if date==date("`post_snapshot_date'", "YMD"), cluster(pkg)
+eststo: reg stars i.treated2 if date==`post_snapshot_date', cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -33,22 +69,23 @@ eststo: reg stars i.treated2 if date==date("`post_snapshot_date'", "YMD"), clust
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
-// // Post-treat differences allowing for dynamics
-// eststo: reg stars i.treated2##c.t if date>=date("`cutoff_date_str'", "YMD"), cluster(pkg)
-// 	* Add scalars
-// 	// Get mean of y -----------------------------------
-// 	sum `e(depvar)' if e(sample)
-// 	local ymean: display %9.1fc `r(mean)'
-// 	estadd local ymean "`ymean'"
-// 	// Get obs -----------------------------------------
-// 	local nobs: display %9.0fc `e(N)'
-// 	estadd local nobs "`nobs'"
-// 	// Get packages/N_clusters -------------------------
-// 	estadd local n_packages `e(N_clust)'
-// 	// Get days ----------------------------------------
-// 	estadd local n_days `delta_days_obs'
+// Post-treat differences allowing for dynamics
+eststo: reg stars i.treated2##c.t if date>cutoff_date, cluster(pkg)
+	* Add scalars
+	// Get mean of y -----------------------------------
+	sum `e(depvar)' if e(sample)
+	local ymean: display %9.1fc `r(mean)'
+	estadd local ymean "`ymean'"
+	// Get obs -----------------------------------------
+	local nobs: display %9.0fc `e(N)'
+	estadd local nobs "`nobs'"
+	// Get packages/N_clusters -------------------------
+	estadd local n_packages `e(N_clust)'
+	// Get days ----------------------------------------
+	estadd local n_days `delta_days_obs'
 
-local savepath using ../output/github_exp_did_stars_regtable.tex
+// -------------------------------------------------------------
+local savepath using ../output/github_exp_stars_regtable.tex
 local fmt %9.2f
 #delimit;
 esttab `savepath',
