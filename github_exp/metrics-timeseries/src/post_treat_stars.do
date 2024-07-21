@@ -55,7 +55,7 @@ eststo: qreg2 stars i.treated2##c.t if date>cutoff_date, cluster(pkg) quantile(.
 // -------------------------------------------------------------
 // Differences in means
 // Post-treat differences snapshot at `post_snapshot_date'
-eststo: reg stars i.treated2 if date==`post_snapshot_date', cluster(pkg)
+eststo: reg stars i.treated2 if date==`post_snapshot_date', vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -65,7 +65,7 @@ eststo: reg stars i.treated2 if date==`post_snapshot_date', cluster(pkg)
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	estadd local n_packages `e(N_clust)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 

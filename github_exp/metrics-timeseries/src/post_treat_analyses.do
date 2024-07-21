@@ -29,7 +29,7 @@ eststo clear
 * --------------------------------------------------------------
 * Snapshot at 20 Jun (1 month relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-06-2
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
+eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -39,15 +39,14 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	estadd local n_packages `e(N_clust)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
 * --------------------------------------------------------------
 * Snapshot at 20 July (2 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-07-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
-	* Add scalars
+eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
 	local ymean: display %9.1fc `r(mean)'
@@ -56,7 +55,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	estadd local n_packages `e(N_clust)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
@@ -64,8 +63,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 * --------------------------------------------------------------
 * Snapshot at 20 August (3 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-08-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
-	* Add scalars
+eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
 	local ymean: display %9.1fc `r(mean)'
@@ -74,14 +72,14 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	estadd local n_packages `e(N_clust)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
 * --------------------------------------------------------------
 * Snapshot at 20 September (4 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-09-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
+eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -91,14 +89,14 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	estadd local n_packages `e(N_clust)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
 * --------------------------------------------------------------
 * Snapshot at 20 October (5 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-10-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg)
+eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -108,7 +106,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	estadd local n_packages `e(N_clust)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
@@ -186,7 +184,7 @@ eststo clear
 * --------------------------------------------------------------
 * Snapshot at 20 Jun (1 month relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-06-20
-eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
+eststo: qreg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(r) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -196,15 +194,14 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui tabulate pkg if e(sample)
-	estadd local n_packages `r(r)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
 * --------------------------------------------------------------
 * Snapshot at 20 July (2 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-07-20
-eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
+eststo: qreg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(r) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -214,8 +211,7 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui tabulate pkg if e(sample)
-	estadd local n_packages `r(r)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
@@ -223,7 +219,7 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 * --------------------------------------------------------------
 * Snapshot at 20 August (3 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-08-20
-eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
+eststo: qreg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(r) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -233,15 +229,14 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui tabulate pkg if e(sample)
-	estadd local n_packages `r(r)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
 * --------------------------------------------------------------
 * Snapshot at 20 September (4 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-09-20
-eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
+eststo: qreg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(r) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -251,15 +246,14 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui tabulate pkg if e(sample)
-	estadd local n_packages `r(r)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
 * --------------------------------------------------------------
 * Snapshot at 20 October (5 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-09-20
-eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), cluster(pkg) quantile(.5)
+eststo: qreg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(r) quantile(.5)
 	* Add scalars
 	// Get median of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
@@ -269,8 +263,7 @@ eststo: qreg2 tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snaps
 	local nobs: display %9.0fc `e(N)'
 	estadd local nobs "`nobs'"
 	// Get packages/N_clusters -------------------------
-	qui tabulate pkg if e(sample)
-	estadd local n_packages `r(r)'
+	estadd local n_packages "`nobs'"
 	// Get days ----------------------------------------
 	estadd local n_days 1
 
@@ -327,7 +320,6 @@ esttab `savepath',
 		pre_treat_mean
 	)
 	scalar(
-		"r2 R$^2$"
 		"ymedian Median of outcome"
 		"n_packages Package observations"
 		"n_days Day observations"
