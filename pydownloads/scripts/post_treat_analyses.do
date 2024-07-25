@@ -45,7 +45,7 @@ eststo: qreg tt_downloads i.treatment if date==date("`post_snapshot_date'", "YMD
 	estadd local n_days 1
 
 // Post-treat differences allowing for dynamics
-eststo: qreg2 tt_downloads i.treatment##c.t if date>=cutoff_date, cluster(pkg) quantile(.5)
+eststo: qreg2 tt_downloads i.treatment##c.t if date>cutoff_date, cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample), d
