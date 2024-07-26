@@ -120,7 +120,7 @@ esttab `savepath',
 	)
 	scalar(
 		// "r2 R$^2$"
-		"ymean Mean/Median of outcome"
+		"ymean Median/Mean of outcome"
 		"n_packages Package observations"
 		"n_days Day observations"
 		"nobs Package-day observations"
