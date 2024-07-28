@@ -10,19 +10,19 @@ encode pkg_str, gen(pkg)
 
 * Defining end of treatment window
 local cutoff_date_str 2023-05-20
-gen cutoff_date= date("`cutoff_date_str'", "YMD")
-gen t = date - cutoff_date
+local cutoff_date = date("`cutoff_date_str'", "YMD")
+gen t = date - `cutoff_date'
 
 local end_date = date("2023-06-07", "YMD")
-local delta_days_obs = `end_date' - cutoff_date
+local delta_days_obs = `end_date' - `cutoff_date'
 dis `delta_days_obs'
 
-local post_snapshot_date date("2023-06-03", "YMD")
+// local post_snapshot_date date("2023-06-03", "YMD")
 
 eststo clear
 // -------------------------------------------------------------
 // Differences in medians
-eststo: qreg stars i.treated2 if date==`post_snapshot_date', vce(r) quantile(.5)
+eststo: qreg stars i.treated2 if date==`cutoff_date', vce(r) quantile(.5)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -37,7 +37,7 @@ eststo: qreg stars i.treated2 if date==`post_snapshot_date', vce(r) quantile(.5)
 	estadd local n_days 1
 
 // Post-treat differences allowing for dynamics
-eststo: qreg2 stars i.treated2##c.t if date>cutoff_date, cluster(pkg) quantile(.5)
+eststo: qreg2 stars i.treated2##c.t if date>`cutoff_date', cluster(pkg) quantile(.5)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -55,7 +55,7 @@ eststo: qreg2 stars i.treated2##c.t if date>cutoff_date, cluster(pkg) quantile(.
 // -------------------------------------------------------------
 // Differences in means
 // Post-treat differences snapshot at `post_snapshot_date'
-eststo: reg stars i.treated2 if date==`post_snapshot_date', vce(hc3)
+eststo: reg stars i.treated2 if date==`cutoff_date', vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -70,7 +70,7 @@ eststo: reg stars i.treated2 if date==`post_snapshot_date', vce(hc3)
 	estadd local n_days 1
 
 // Post-treat differences allowing for dynamics
-eststo: reg stars i.treated2##c.t if date>cutoff_date, cluster(pkg)
+eststo: reg stars i.treated2##c.t if date>`cutoff_date', cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
