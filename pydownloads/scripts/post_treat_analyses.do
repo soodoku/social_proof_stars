@@ -18,13 +18,6 @@ local delta_days_obs = `end_date' - cutoff_date
 
 local post_snapshot_date 2023-06-22
 
-// // Remove 100 downloads 3 days after cutoff date
-// local cutoff_date_plus_3days = cutoff_date + 3
-// 	if (date >= `cutoff_date_plus_3days') & (treatment == 1)
-
-// // Drop treatment window
-// drop if (date >= cutoff_date) & (date < `cutoff_date_plus_3days')
-
 eststo clear
 // =============================================================
 // Medians
@@ -93,7 +86,35 @@ eststo: reg tt_downloads i.treatment##c.t if date>cutoff_date, cluster(pkg)
 	// Get days ----------------------------------------
 	estadd local n_days `delta_days_obs'
 
-
+#delimit;
+esttab,
+	varwidth(40)
+	se
+	collabels(, none)
+	noomitted
+    nobaselevels
+	star(+ 0.1 * 0.05 ** 0.01 *** 0.001)
+	coeflabels(
+		_cons "Constant"
+		1.treatment "Treatment group"
+		t "Linear trend"
+		1.treatment#c.t "Treatment group  $ \times$ Linear trend"
+	)
+	order(
+		1.treatment
+		t
+		1.treatment#c.t
+	)
+	scalar(
+		// "r2 R$^2$"
+		"ymean Median/Mean of outcome"
+		"n_packages Package observations"
+		"n_days Day observations"
+		"nobs Package-day observations"
+	)
+	// Other LaTeX settings
+;
+#delimit cr
 
 local savepath using ../tabs/pypi_exp_regtable.tex
 local fmt %9.1f
@@ -132,3 +153,4 @@ esttab `savepath',
 	replace	
 ;
 #delimit cr
+
