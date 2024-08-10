@@ -29,7 +29,7 @@ eststo clear
 * --------------------------------------------------------------
 * Snapshot at 20 Jun (1 month relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-06-2
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
+eststo: reg tt_downloads i.treated2 if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -46,7 +46,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 * --------------------------------------------------------------
 * Snapshot at 20 July (2 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-07-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
+eststo: reg tt_downloads i.treated2 if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
 	local ymean: display %9.1fc `r(mean)'
@@ -63,7 +63,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 * --------------------------------------------------------------
 * Snapshot at 20 August (3 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-08-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
+eststo: reg tt_downloads i.treated2 if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
 	local ymean: display %9.1fc `r(mean)'
@@ -79,7 +79,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 * --------------------------------------------------------------
 * Snapshot at 20 September (4 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-09-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
+eststo: reg tt_downloads i.treated2 if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -96,7 +96,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 * --------------------------------------------------------------
 * Snapshot at 20 October (5 months relative to 20 May end of treatment period)
 local _post_snapshot_date 2023-10-20
-eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
+eststo: reg tt_downloads i.treated2 if date==date("`_post_snapshot_date'", "YMD"), vce(hc3)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -112,7 +112,7 @@ eststo: reg tt_downloads i.treated2 pre_treat_mean if date==date("`_post_snapsho
 
 * --------------------------------------------------------------
 * Post-treat differences allowing for dynamics
-eststo: reg tt_downloads i.treated2##c.t pre_treat_mean if date>=cutoff_date, cluster(pkg)
+eststo: reg tt_downloads i.treated2##c.t if date>=cutoff_date, cluster(pkg)
 	* Add scalars
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
