@@ -117,14 +117,14 @@ esttab,
 #delimit cr
 
 local savepath using ../tabs/pypi_exp_regtable.tex
-local fmt %9.1f
+local fmt %9.1fc
 #delimit;
 esttab `savepath',
 	cell(
 		b (    fmt(`fmt') star) 
 		se(par fmt(`fmt'))
-		ci(par(\multicolumn{1}{r}{\text{[$ \:\text{to}\: $]}}) fmt(`fmt'))
-		p (par(\multicolumn{1}{r}{\text{$<p= >$}})         fmt(%9.3f)) 
+		ci(par(\multicolumn{1}{c}{\text{[$ \:\text{to}\: $]}}) fmt(`fmt'))
+		p (par(\multicolumn{1}{c}{\text{$<p= >$}})         fmt(%9.3f)) 
 	)
 	collabels(, none)
 	nonumber
