@@ -26,7 +26,7 @@ foreach var of local vars_to_encode {
     encode `var'_str, gen(`var')
 }
 
-global repo_baselines size_mb fork year_created subscribers_count has_issues forks open_issues n_topic python_lang
+global repo_baselines size_mb fork year_created subscribers_count has_issues forks open_issues n_topics python_lang
 
 
 #delimit;
@@ -99,11 +99,12 @@ iebaltab
 ;
 #delimit cr
 
-
 // -----------------------------------------------------------------------------
 * User baselines
 // -----------------------------------------------------------------------------
 use "../../get_baseline_profile/output/user_baselines.dta", clear
+
+replace treated2 = 0 if (missing(treated2)) & (treated==0)
 
 gen org = (type=="Organization")
 global user_baselines public_repos public_gists followers following year_created year_updated org list_co list_email list_blog list_bio bio_size
@@ -241,5 +242,5 @@ iebaltab
 
 
 
-
+aa
 log close

@@ -2,7 +2,7 @@
       name:  <unnamed>
        log:  \\wsl.localhost\Debian\home\lsys\social_proof_stars\github_exp\baltest\src\../output/stata-log.txt
   log type:  text
- opened on:  10 Jun 2023, 10:57:34
+ opened on:  11 Aug 2024, 14:16:09
 
 . 
 . version 13              // Still on version 13 :(
@@ -25,7 +25,7 @@
   4. }
 
 . 
-. global repo_baselines size_mb fork year_created subscribers_count has_issues forks open_issues n_topic python_lang
+. global repo_baselines size_mb fork year_created subscribers_count has_issues forks open_issues n_topics python_lang
 
 . 
 . 
@@ -107,11 +107,14 @@ delimiter now ;
 . #delimit cr
 delimiter now cr
 . 
-. 
 . // -----------------------------------------------------------------------------
 . * User baselines
 . // -----------------------------------------------------------------------------
 . use "../../get_baseline_profile/output/user_baselines.dta", clear
+
+. 
+. replace treated2 = 0 if (missing(treated2)) & (treated==0)
+(3 real changes made)
 
 . 
 . gen org = (type=="Organization")
@@ -270,10 +273,11 @@ delimiter now cr
 . 
 . 
 . 
-. 
-. log close
-      name:  <unnamed>
-       log:  \\wsl.localhost\Debian\home\lsys\social_proof_stars\github_exp\baltest\src\../output/stata-log.txt
-  log type:  text
- closed on:  10 Jun 2023, 10:57:35
-------------------------------------------------------------------------------------------------------------------------
+. aa
+unrecognized command:  aa
+r(199);
+
+end of do-file
+
+r(199);
+

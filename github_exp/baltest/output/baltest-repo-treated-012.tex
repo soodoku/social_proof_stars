@@ -2,7 +2,7 @@
 %%% (https://github.com/worldbank/ietoolkit)
 %%% (https://dimewiki.worldbank.org/iebaltab)
 %%% The command was specified exactly like this: 
-%%% iebaltab size_mb fork year_created subscribers_count has_issues forks open_issues n_topic python_lang , groupvar(treated2) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated (low) @ 2 Treated (high) @ ) order(0 1 2) control(0) grouplabels(0 "Control packages" @ 1 "Treated (low dose)" @ 2 "Treated (high dose)") rowlabels( year_created "Year created" @ fork "Forked = 1" @ size_mb "Repository size" @ has_issues "Has issues = 1" @ forks "Number of forks" @ open_issues "Number of open issues" @ subscribers_count "Subscribers" @ n_topics "Number of topics listed" @ python_lang "Python = 1" ) format(%9.2f) savetex(../output/baltest-repo-treated-012.tex) replace
+%%% iebaltab size_mb fork year_created subscribers_count has_issues forks open_issues n_topics python_lang , groupvar(treated2) star(.1 .05 .01) stats(pair(nrmd)) nonote grplabels( 0 Control @ 1 Treated (low) @ 2 Treated (high) @ ) order(0 1 2) control(0) grouplabels(0 "Control packages" @ 1 "Treated (low dose)" @ 2 "Treated (high dose)") rowlabels( year_created "Year created" @ fork "Forked = 1" @ size_mb "Repository size" @ has_issues "Has issues = 1" @ forks "Number of forks" @ open_issues "Number of open issues" @ subscribers_count "Subscribers" @ n_topics "Number of topics listed" @ python_lang "Python = 1" ) format(%9.2f) savetex(../output/baltest-repo-treated-012.tex) replace
 
 \begin{tabular}{@{\extracolsep{5pt}}lcccccccccc}
 \\[-1.8ex]\hline \hline \\[-1.8ex]
