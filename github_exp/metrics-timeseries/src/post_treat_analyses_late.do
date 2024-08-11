@@ -23,8 +23,8 @@ local delta_days_obs = `end_date' - date("`cutoff_date_str'", "YMD") + 1
 // =============================================================
 eststo clear
 * --------------------------------------------------------------
-* Snapshot at 20 Jun (1 month relative to 20 May end of treatment period)
-local _post_snapshot_date 2023-06-2
+* Snapshot at 21 Jun (1 month relative to 21 May end of treatment period)
+local _post_snapshot_date 2023-06-21
 eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapshot_date'", "YMD"), r first
 	* Add scalars
 	// Get mean of y -----------------------------------
@@ -40,8 +40,8 @@ eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapsh
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 20 July (2 months relative to 20 May end of treatment period)
-local _post_snapshot_date 2023-07-20
+* Snapshot at 21 July (2 months relative to 21 May end of treatment period)
+local _post_snapshot_date 2023-07-21
 eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapshot_date'", "YMD"), r first
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -57,8 +57,8 @@ eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapsh
 
 
 * --------------------------------------------------------------
-* Snapshot at 20 August (3 months relative to 20 May end of treatment period)
-local _post_snapshot_date 2023-08-20
+* Snapshot at 21 August (3 months relative to 21 May end of treatment period)
+local _post_snapshot_date 2023-08-21
 eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapshot_date'", "YMD"), r first
 	// Get mean of y -----------------------------------
 	sum `e(depvar)' if e(sample)
@@ -73,8 +73,8 @@ eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapsh
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 20 September (4 months relative to 20 May end of treatment period)
-local _post_snapshot_date 2023-09-20
+* Snapshot at 21 September (4 months relative to 21 May end of treatment period)
+local _post_snapshot_date 2023-09-21
 eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapshot_date'", "YMD"), r first
 	* Add scalars
 	// Get mean of y -----------------------------------
@@ -90,8 +90,8 @@ eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapsh
 	estadd local n_days 1
 
 * --------------------------------------------------------------
-* Snapshot at 20 October (5 months relative to 20 May end of treatment period)
-local _post_snapshot_date 2023-10-20
+* Snapshot at 21 October (5 months relative to 21 May end of treatment period)
+local _post_snapshot_date 2023-10-21
 eststo: ivreg2 tt_downloads (i.treated=i.treatment) if date==date("`_post_snapshot_date'", "YMD"), r first
 	* Add scalars
 	// Get mean of y -----------------------------------
